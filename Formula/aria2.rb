@@ -31,70 +31,49 @@ class Aria2 < Formula
     bash_completion.install "doc/bash_completion/aria2c"
   end
 
-  def config
-    <<~EOS
-      bt-enable-lpd=true
-      bt-save-metadata=true
-      bt-seed-unverified=true
-      continue=true
-      daemon=true
-      dir=/Users/warexify/Downloads
-      disk-cache=64M
-      enable-dht=true
-      enable-http-pipelining=true
-      enable-mmap=true
-      enable-rpc=true
-      event-poll=kqueue
-      file-allocation=falloc
-      input-file=/usr/local/var/aria2/aria2.session
-      listen-port=64248
-      lowest-speed-limit=0
-      max-concurrent-downloads=6
-      max-connection-per-server=6
-      max-tries=0
-      rpc-allow-origin-all=true
-      rpc-listen-all=true
-      rpc-listen-port=6800
-      rpc-secret=kPKOas8xZCqDHCkKhM0a-o9Sr1rQhL94
-      save-session=/usr/local/var/aria2/aria2.session
-      save-session-interval=30
-    EOS
-  end
-
   def post_install
-    system "mkdir #{var}/aria2"
-    system "touch #{var}/aria2/aria2.session"
-    # (var+"aria2/aria2.conf").write config
+    (var/"log").mkpath
+    (var/"cache/aria2").mkpath
+    system "touch #{var}/cache/aria2/session.conf"
   end
 
-  plist_options :manual => "aria2c"
+  plist_options :startup => true, :manual => "#{HOMEBREW_PREFIX}/bin/aria2c -D --enable-rpc=true --rpc-allow-origin-all=true --rpc-listen-all=true --rpc-listen-port=6800 --rpc-secret=kPKOas8xZCqDHCkKhM0a-o9Sr1rQhL94 --input-file=#{HOMEBREW_PREFIX}/var/cache/aria2/session.conf --save-session=#{HOMEBREW_PREFIX}/var/cache/aria2/session.conf --log-level=error"
 
   def plist; <<~EOS
-	<?xml version="1.0" encoding="UTF-8"?>
-	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-	<plist version="1.0">
-	<dict>
-		<key>Label</key>
-		<string>homebrew.mxcl.aria2c</string>
-		<key>RunAtLoad</key>
-		<true/>
-		<key>ProgramArguments</key>
-		<array>
-			<string>#{opt_bin}/aria2c</string>
-			<string>--enable-rpc=true</string>
-			<string>--input-file=#{var}/aria2/aria2.session</string>
-			<string>--save-session=#{var}/aria2/aria2.session</string>
-			<string>--conf-path=/Users/warexify/.aria2/aria2.conf</string>
-		</array>
-		<key>ServiceDescription</key>
-		<string>Aria2 Service</string>
-		<key>StandardErrorPath</key>
-		<string>#{var}/log/aria2-error.log</string>
-		<key>StandardOutPath</key>
-		<string>#{var}/log/aria2-output.log</string>
-	</dict>
-	</plist>
-	EOS
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>Label</key>
+      <string>#{plist_name}</string>
+      <key>ProgramArguments</key>
+      <array>
+        <string>#{opt_bin}/aria2c</string>
+        <string>-D</string>
+        <string>--enable-rpc=true</string>
+        <string>--rpc-allow-origin-all=true</string>
+        <string>--rpc-listen-all=true</string>
+        <string>--rpc-listen-port=6800</string>
+        <string>--rpc-secret=kPKOas8xZCqDHCkKhM0a-o9Sr1rQhL94</string>
+        <string>--input-file=#{var}/cache/aria2/session.conf</string>
+        <string>--save-session=#{var}/cache/aria2/session.conf</string>
+        <string>--log-level=error</string>
+      </array>
+      <key>RunAtLoad</key>
+      <true/>
+      <key>KeepAlive</key>
+      <true/>
+      <key>ServiceDescription</key>
+      <string>Aria2 Download Daemon</string>
+      <key>WorkingDirectory</key>
+      <string>#{HOMEBREW_PREFIX}</string>
+      <key>StandardOutPath</key>
+      <string>#{var}/log/aria2-daemon.log</string>
+      <key>StandardErrorPath</key>
+      <string>#{var}/log/aria2-daemon.log</string>
+    </dict>
+    </plist>
+    EOS
   end
 
   test do

@@ -9,8 +9,8 @@ class Ionice < Formula
 
   def install
     system "make"
-    system "mkdir #{prefix}/bin"
-    system "cp ionice #{prefix}/bin"
+    bin.mkpath
+    bin.install "ionice"
   end
 
   test do

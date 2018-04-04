@@ -5,7 +5,6 @@ class Aosd < Formula
   url "https://github.com/warexify/aosd/archive/v1.1.3.tar.gz"
   sha256 "078fc2239b6f55e44904136f43ff1851f1aa694d592c12e9f675d9b8858a4bb1"
 
-
   depends_on :python if MacOS.version <= :snow_leopard
 
   def install
