@@ -6,7 +6,7 @@ class Yarn < Formula
 
   devel do
     url "https://nightly.yarnpkg.com/latest.tar.gz"
-    sha256 "7f06173c0b57032e41ab00d08df0fa63ada106d49d984f2097df03936cc564b9"
+    sha256 "d3784a83937ed4067e5e39bfe94a92c1ff2855402f8a491de53c06e9ab983e8c"
     version "nightly"
   end
 
