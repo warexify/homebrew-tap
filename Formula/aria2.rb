@@ -62,15 +62,13 @@ class Aria2 < Formula
       <key>RunAtLoad</key>
       <true/>
       <key>KeepAlive</key>
-      <true/>
-      <key>ServiceDescription</key>
-      <string>Aria2 Download Daemon</string>
+      <false/>
       <key>WorkingDirectory</key>
       <string>#{HOMEBREW_PREFIX}</string>
       <key>StandardOutPath</key>
-      <string>#{var}/log/aria2-daemon.log</string>
+      <string>#{var}/log/aria2-output.log</string>
       <key>StandardErrorPath</key>
-      <string>#{var}/log/aria2-daemon.log</string>
+      <string>#{var}/log/aria2-error.log</string>
     </dict>
     </plist>
     EOS
