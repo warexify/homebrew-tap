@@ -4,7 +4,7 @@ class Antibody < Formula
   url "https://github.com/getantibody/antibody/releases/download/v3.5.2/antibody_Darwin_x86_64.tar.gz"
   version "3.5.2"
   sha256 "a26a5315a98d9d0b1a00be44bdfff8386c7ca6f361c797ff4f4d2625575d1e8c"
-  
+
   def install
     bin.install "antibody"
   end

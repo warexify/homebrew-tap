@@ -24,7 +24,7 @@ class BashCompletionAT2 < Formula
 
   def caveats; <<~EOS
     Add the following to your ~/.bash_profile:
-    
+
     for profile_file in "$(brew --prefix)"/etc/profile.d/*.sh; do
       source "$profile_file"
     done

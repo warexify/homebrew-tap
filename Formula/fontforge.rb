@@ -92,7 +92,7 @@ class Fontforge < Formula
 
     Alternatively, install with Homebrew-Cask:
       brew cask install fontforge
-    EOS
+  EOS
   end
 
   test do
