@@ -1,8 +1,8 @@
 class ClassDump < Formula
   desc "(Fork) Utility for examining the Objective-C segment of Mach-O files"
   homepage "http://stevenygard.com/projects/class-dump/"
-  url "https://github.com/warexify/class-dump/archive/3.6.tar.gz"
-  sha256 "fe0629982344aac51c0eea1e0cff4e908a5cc2afa94b4f4eacbd12b5feec5392"
+  url "https://github.com/warexify/class-dump/archive/3.7.tar.gz"
+  sha256 "c328bd80e8ed051a518e8c2bac6cc95a3a7368d89f988e4fc243d6c7f3ae8702"
 
   depends_on :xcode => :build
 
