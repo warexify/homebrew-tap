@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/be/45/34649db3426bb54471bf3a5f3ad9d5099bcec0a0ea3d0e0a719dcff3c354/afdko-2.7.0.tar.gz"
-  sha256 "e77a540aa8e6de248f1987149cd3604676a50534e4c54bdeec5400fcb2da1b56"
+  url "https://files.pythonhosted.org/packages/bf/f3/3bcacf648d676761325d3e468059f35fdc585b48455edc486a45018b8f0d/afdko-2.7.2.tar.gz"
+  sha256 "d31c68cf0ae2e1760bf557c0b373c9e31811cbaebe2b5fe1c34785c718484d74"
 
   depends_on "python@2"
 
@@ -19,8 +19,8 @@ class Afdko < Formula
   end
 
   resource "fontMath" do
-    url "https://files.pythonhosted.org/packages/a6/7a/2ce3ee4d85ded137339d1d65ae693870409dff626393acbfc185e088cd37/fontMath-0.4.4.zip"
-    sha256 "2a7bbee59c2e06659e95c3e9c4a656d19fe0584a2f2bc711588e1c884e14bf14"
+    url "https://files.pythonhosted.org/packages/b0/c5/f019c56898af429fa5561e0fa7cf0f132655adf27447a56bc7861b155ea7/fontMath-0.4.5.zip"
+    sha256 "a35dde1d500bcb9d659916aa820f31bc7184fe4950708ffc00450e9ecd6c243f"
   end
 
   resource "fontPens" do
@@ -29,18 +29,18 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/c5/91/20c29fa1412f5182da2bd8dfae78276d70469e1826d553b0fbc995f143da/fonttools-3.25.0.zip"
-    sha256 "c1b7eb0469d4e684bb8995906c327109beac870a33900090d64f85d79d646360"
+    url "https://files.pythonhosted.org/packages/03/82/7b884380da2d96c5032cd061920399219bbc9e918cf57d541d0e6f727504/fonttools-3.27.0.zip"
+    sha256 "5ef5cb2f0b5a4c1e0c1ca4358587479d86f8b53cd7a2939e3add52671afb7904"
   end
 
   resource "MutatorMath" do
-    url "https://files.pythonhosted.org/packages/39/95/ea9f0c9c4ba18491eac11f316fbe7458860cabe6726c97ab325bd8be56a3/MutatorMath-2.1.0.zip"
-    sha256 "ebf8291637c7de30fe83f9402dad17c6ac9e1feb16d530e0a560d8e6abf48fce"
+    url "https://files.pythonhosted.org/packages/60/4a/2816f998d33dda49c68d22f5128372435a0799157269ad48c2952171967c/MutatorMath-2.1.1.zip"
+    sha256 "3353fdd0d1beb13bda458265573bbefa0d4afb5aa5f9e4d3503cb9d3b0623f12"
   end
 
   resource "pyclipper" do
-    url "https://files.pythonhosted.org/packages/7c/8a/dca05b87240b297f7508e3e7687921103770069f3247b94311087f877414/pyclipper-1.1.0.zip"
-    sha256 "3f11e87f0b82bccc6de57eead2628ca419694352e8b843bcd228eec9c9357680"
+    url "https://files.pythonhosted.org/packages/20/a3/a60a7bad5246d66f3c54127b34b90e6d34b2cc006b84135bfcbfee4514b1/pyclipper-1.1.0.post1.zip"
+    sha256 "8a8b6018d53fcce291f78dedca19994f82695eed3a2c9eff275691d4ed9aab51"
   end
 
   resource "ufoLib" do
@@ -49,8 +49,8 @@ class Afdko < Formula
   end
 
   resource "ufonormalizer" do
-    url "https://files.pythonhosted.org/packages/1e/89/63ff0764b3d93cbe9e4e7a475e6013f345723c7fa112a09a7b8dcdf43dc7/ufonormalizer-0.3.2.zip"
-    sha256 "907b32271561ae23fe1fa1235e0e05d687a10b8104f87917b57a1a57da947d5c"
+    url "https://files.pythonhosted.org/packages/3b/78/a4045238bd89ea9e4362de370bff374583f1d7f30f71a4d1845babb24357/ufonormalizer-0.3.5.zip"
+    sha256 "634d49e647f562fb4b07ac38b902a92aacd215929c157d3eef2d78f39fb335fe"
   end
 
   def install

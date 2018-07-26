@@ -17,27 +17,21 @@ class Fontforge < Formula
 
   deprecated_option "with-gif" => "with-giflib"
 
-  depends_on :x11 => :optional
-  if build.with? "x11"
-    depends_on "cairo" => "with-x11"
-    depends_on "pango" => "with-x11"
-  else
-    depends_on "cairo"
-    depends_on "pango"
-  end
   depends_on "pkg-config" => :build
-  depends_on "libtool" => :build
+  depends_on "libtool"
   depends_on "gettext"
-  depends_on "zeromq"
-  depends_on "czmq"
+  depends_on "pango"
+  depends_on "cairo"
   depends_on "fontconfig"
-  depends_on "libpng" => :recommended
+  depends_on "libpng"
   depends_on "jpeg" => :recommended
   depends_on "libtiff" => :recommended
   depends_on "giflib" => :optional
   depends_on "libspiro" => :optional
   depends_on "libuninameslist" => :optional
+  depends_on "gtk+3"
   depends_on "python@2"
+  depends_on "woff2" => :recommended
 
   stable do
     patch do
@@ -54,7 +48,7 @@ class Fontforge < Formula
       --prefix=#{prefix}
       --disable-silent-rules
       --disable-dependency-tracking
-      --without-x
+      --enable-gdk=gdk3
     ]
 
     args << "--without-libjpeg" if build.without? "jpeg"
@@ -62,18 +56,13 @@ class Fontforge < Formula
     args << "--without-giflib" if build.without? "giflib"
     args << "--without-libspiro" if build.without? "libspiro"
     args << "--without-libuninameslist" if build.without? "libuninameslist"
-
-    # Fix header includes to avoid crash at runtime:
-    # https://github.com/fontforge/fontforge/pull/3147
-    inreplace "fontforgeexe/startnoui.c", "#include \"fontforgevw.h\"", "#include \"fontforgevw.h\"\n#include \"encoding.h\"" if build.stable?
+    args << "--enable-woff2" if build.without? "woff2"
 
     system "./bootstrap" if build.head?
     system "./configure", *args
     system "make"
     system "make", "install"
 
-    # The app here is not functional.
-    # If you want GUI/App support, check the caveats to see how to get it.
     (pkgshare/"osx/FontForge.app").rmtree
 
     if build.with? "extra-tools"

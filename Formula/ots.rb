@@ -1,32 +1,19 @@
 class Ots < Formula
   desc "OpenType Sanitiser parses validates & sanitizes OpenType & WOFF2 font files"
   homepage "https://github.com/khaledhosny/ots"
-  url "https://github.com/khaledhosny/ots/releases/download/v6.1.1/ots-6.1.1.tar.gz"
-  version "6.1.1"
-  sha256 "d9ca90b4e0cbf2aa3f7bafbf8a2ca6c8b76c4f1c65da9a3b4e374ee21286cee2"
+  url "https://github.com/khaledhosny/ots/releases/download/v7.1.7/ots-7.1.7.tar.xz"
+  version "7.1.7"
+  sha256 "4cd2ab175b40363b5708d0246aa3acf65a21f5934879082c081502cf46675703"
 
   head "https://github.com/khaledhosny/ots.git"
 
-  depends_on "autoconf"   => :build
-  depends_on "automake"   => :build
-  depends_on "libtool"    => :build
-  depends_on "pkg-config" => :build
-  depends_on "freetype"   => :optional
+  depends_on "python"
+  depends_on "ninja"
+  depends_on "meson-internal" => :build
 
   def install
-    if build.with? "freetype"
-      ENV.prepend_path "PKG_CONFIG_PATH", Formula["freetype"].opt_lib/"pkgconfig"
-    end
-
-    system "./autogen.sh" if build.head?
-    system "./configure"
-    system "make", "CXXFLAGS=-DOTS_DEBUG"
-
-    bin.install "ots-sanitize"
-    bin.install "ots-perf"
-    bin.install "ots-idempotent"
-    bin.install "ots-validator-checker"
-    bin.install "ots-side-by-side" if build.with? "freetype"
+    system "meson", "--strip", "-Ddebug=true", "--prefix=#{prefix}", "--bindir=#{prefix}/bin", "build"
+    system "ninja", "-C", "build", "install"
   end
 
   test do

@@ -1,8 +1,8 @@
 class Zydis < Formula
   desc "Fast and lightweight x86/x86-64 disassembler library"
   homepage "https://zydis.re"
-  url "https://github.com/zyantific/zydis/archive/v2.0.1.tar.gz"
-  sha256 "8fd27b5d05c5b1494606cb57bad6564a54b74a77953327c14ebc755a747380e3"
+  url "https://github.com/zyantific/zydis/archive/v2.0.2.tar.gz"
+  sha256 "bd711102a5a30096562a7cb60bafbc9c4a2441ce5463a59f4d16f2dd73f9fb72"
 
   head "https://github.com/zyantific/zydis.git"
 
