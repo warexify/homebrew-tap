@@ -5,6 +5,8 @@ class Mtoc < Formula
   sha256 "ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7"
   version "895"
 
+  bottle :unneeded
+
   def install
     cd("libstuff") do
       system "make", "EFITOOLS=efitools", "LTO="

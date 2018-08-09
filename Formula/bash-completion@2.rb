@@ -5,6 +5,8 @@ class BashCompletionAT2 < Formula
   sha256 "c01f5570f5698a0dda8dc9cfb2a83744daa1ec54758373a6e349bd903375f54d"
   head "https://github.com/scop/bash-completion.git"
 
+  bottle :unneeded
+
   head do
     depends_on "automake" => :build
     depends_on "autoconf" => :build

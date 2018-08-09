@@ -7,6 +7,8 @@ class Woff2 < Formula
 
   head "https://github.com/google/woff2.git"
 
+  bottle :unneeded
+
   depends_on "brotli" => :build
   depends_on "cmake" => :build
 

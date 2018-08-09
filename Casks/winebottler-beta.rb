@@ -4,7 +4,7 @@ cask 'winebottler-beta' do
 
   url "https://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_#{version}.dmg"
   name 'WineBottler'
-  homepage 'https://winebottler.kronenberg.org'
+  homepage 'https://winebottler.kronenberg.org/'
 
   app 'WineBottler.app'
   app 'Wine.app'

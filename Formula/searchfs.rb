@@ -6,6 +6,8 @@ class Searchfs < Formula
   sha256 "fa61d204a937c10f5fd0b054d862332d3ad492b4ea902d93a9d64d594019879d"
   version "0.1"
 
+  bottle :unneeded
+
   def install
     if build.stable?
       bin.install "searchfs"

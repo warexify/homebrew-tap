@@ -3,7 +3,8 @@ class Superiotool < Formula
   homepage "https://coreboot.org/"
   url "https://github.com/warexify/superiotool/archive/superiotool-4.5.tar.gz"
   sha256 "68a0898861242817207b1412afd99fcb2413399bedb509e10624441fff9d9191"
-  version "4.5"
+
+  bottle :unneeded
 
   def install
     system "make", "DESTDIR=#{prefix}", "PREFIX=/", "install"

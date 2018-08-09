@@ -5,6 +5,8 @@ class MarathonSwift < Formula
   sha256 "5dd1f495a8d69d9c3450735b771f816a838a040a45c682b0c42ac17105058a6e"
   head "https://github.com/JohnSundell/Marathon.git"
 
+  bottle :unneeded
+
   depends_on :xcode => ["9.0", :build]
 
   def install

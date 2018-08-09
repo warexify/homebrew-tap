@@ -5,6 +5,8 @@ class Ntfs3g < Formula
   sha256 "3e5a021d7b761261836dcb305370af299793eedbded731df3d6943802e1262d5"
   head "https://git.code.sf.net/p/ntfs-3g/ntfs-3g.git", :branch => "edge"
 
+  bottle :unneeded
+
   head do
     depends_on "autoconf" => :build
     depends_on "automake" => :build

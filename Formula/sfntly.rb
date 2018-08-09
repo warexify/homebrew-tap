@@ -4,6 +4,8 @@ class Sfntly < Formula
   url "https://github.com/googlei18n/sfntly.git", :using => :git
   version "0.0.1"
 
+  bottle :unneeded
+
   def install
     system "ant", "-f", "java/build.xml"
     libexec.install "java/dist/lib/sfntly.jar"

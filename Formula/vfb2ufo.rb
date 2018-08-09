@@ -5,6 +5,8 @@ class Vfb2ufo < Formula
   version "2015-01-23"
   sha256 "bba50c7ec94c3f8d112be368e2532bd0e4b97047b6059734f5b2e46031b70671"
 
+  bottle :unneeded
+
   def install
     bin.install "vfb2ufoMac/bin/vfb2ufo"
   end

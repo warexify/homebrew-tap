@@ -5,6 +5,8 @@ class Mint < Formula
   sha256 "d32be438caabc3e527a812e809f0f004dfede0959c8099e3a5ce24b526a464cc"
   head "https://github.com/yonaskolb/Mint.git"
 
+  bottle :unneeded
+
   depends_on :xcode => ["9.0", :build]
 
   def install

@@ -4,7 +4,7 @@ cask 'nfoviewer' do
 
   url 'http://blockart.sourceforge.net/NFOViewer%20(0.3%20beta%203).zip'
   name 'NFOViewer'
-  homepage 'http://blockart.sourceforge.net'
+  homepage 'http://blockart.sourceforge.net/'
 
   app 'NFOViewer.app'
   font 'ProFont/ProFontWindows.ttf'

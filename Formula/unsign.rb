@@ -3,6 +3,8 @@ class Unsign < Formula
   homepage "http://www.woodmann.com/collaborative/tools/index.php/Unsign"
   head "https://github.com/steakknife/unsign.git"
 
+  bottle :unneeded
+
   def install
     system "make"
     bin.install "unsign"

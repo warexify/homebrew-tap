@@ -6,6 +6,8 @@ class Afdko < Formula
   url "https://files.pythonhosted.org/packages/f6/48/33429c27f4f3fe096e5c8d92ea9c83913354d72e826dc77ec558854d7fa0/afdko-2.7.3a4.tar.gz"
   sha256 "0a5c4fd5b085a1377ae02ad272417f1a84224bbf3b48729ad49915b920e2dcc1"
 
+  bottle :unneeded
+
   depends_on "python@2"
 
   resource "booleanOperations" do

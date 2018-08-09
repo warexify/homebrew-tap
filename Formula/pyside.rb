@@ -4,6 +4,8 @@ class Pyside < Formula
   url "https://download.qt.io/official_releases/QtForPython/pyside2/PySide2-5.11.1-src/pyside-setup-everywhere-src-5.11.1.tar.xz"
   sha256 "9cbc3cbb03c6c1ddba8de7a651c84b269f87ebd4a0991a1f9acc8b2d0ccdfb83"
 
+  bottle :unneeded
+
   depends_on "cmake" => [:build, :test]
   depends_on "llvm"
   depends_on "python"
