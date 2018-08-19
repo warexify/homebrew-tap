@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/f6/48/33429c27f4f3fe096e5c8d92ea9c83913354d72e826dc77ec558854d7fa0/afdko-2.7.3a4.tar.gz"
-  sha256 "0a5c4fd5b085a1377ae02ad272417f1a84224bbf3b48729ad49915b920e2dcc1"
+  url "https://files.pythonhosted.org/packages/08/0f/0604154843d569c8b741142e621759d67e5f1c34bdf21f0b89a2edf48341/afdko-2.7.3a10.tar.gz"
+  sha256 "6d8423b5056a5a66867c8ec9c034a96e3b7e125bdc73c3ce615888e4e8929c12"
 
   bottle :unneeded
 
@@ -16,8 +16,8 @@ class Afdko < Formula
   end
 
   resource "defcon" do
-    url "https://files.pythonhosted.org/packages/bc/74/b7905c0dfad08f8524ffd6257759e2f6c98abd158769362f6976347c0d86/defcon-0.5.1.zip"
-    sha256 "782824bc0554f7e68c8da5d53729571cb5d9316eb5f95b14ca19953b8b9c01aa"
+    url "https://files.pythonhosted.org/packages/70/3f/96f57f6f5953881f9e9e95bcbc30da43d593ebbfb3ea653786e40bbe057a/defcon-0.5.2.zip"
+    sha256 "bcd6539247d034918c4df687fdaa6e64fbca939cf9b34aee506527e95190f2dc"
   end
 
   resource "fontMath" do
@@ -38,6 +38,11 @@ class Afdko < Formula
   resource "MutatorMath" do
     url "https://files.pythonhosted.org/packages/60/4a/2816f998d33dda49c68d22f5128372435a0799157269ad48c2952171967c/MutatorMath-2.1.1.zip"
     sha256 "3353fdd0d1beb13bda458265573bbefa0d4afb5aa5f9e4d3503cb9d3b0623f12"
+  end
+
+  resource "psautohint" do
+    url "https://files.pythonhosted.org/packages/d0/d5/d660a735784c8498b099d352bf86c6cfd72f697d9e5c08f9fa2bac1397b9/psautohint-1.7.0.zip"
+    sha256 "629d3e58de8cdc7d048f093b1562fd85abd817d2852760a65825d11b8ce2defc"
   end
 
   resource "ufoLib" do
