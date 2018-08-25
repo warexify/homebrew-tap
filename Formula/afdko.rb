@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/08/0f/0604154843d569c8b741142e621759d67e5f1c34bdf21f0b89a2edf48341/afdko-2.7.3a10.tar.gz"
-  sha256 "6d8423b5056a5a66867c8ec9c034a96e3b7e125bdc73c3ce615888e4e8929c12"
+  url "https://files.pythonhosted.org/packages/64/36/7a8bd7071c5cc28ef3e403022f0615a363d21519e4d563457f4a8696765a/afdko-2.7.3b0.tar.gz"
+  sha256 "911db2e58bf18271aee590e9f5ace4186afc38feffa51dfbfd8b61ea910827d1"
 
   bottle :unneeded
 

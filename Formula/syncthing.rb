@@ -57,7 +57,7 @@ class Syncthing < Formula
           <false/>
         </dict>
         <key>LowPriorityIO</key>
-	      <true/>
+        <true/>
         <key>ProcessType</key>
         <string>Background</string>
         <key>StandardErrorPath</key>
