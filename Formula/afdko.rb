@@ -3,8 +3,9 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/64/36/7a8bd7071c5cc28ef3e403022f0615a363d21519e4d563457f4a8696765a/afdko-2.7.3b0.tar.gz"
-  sha256 "911db2e58bf18271aee590e9f5ace4186afc38feffa51dfbfd8b61ea910827d1"
+  url "https://files.pythonhosted.org/packages/ff/5c/a300808dc7283c9aedf626774c779dfd3e1da80ed138549b211c3b5eadcc/afdko-2.8.0rc0.tar.gz"
+  sha256 "76429dc85f4829d7c10896dcde4898bec428529fc8c8b7381e4f4df3b06d8d50"
+  head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
 
@@ -21,8 +22,8 @@ class Afdko < Formula
   end
 
   resource "fontMath" do
-    url "https://files.pythonhosted.org/packages/b0/c5/f019c56898af429fa5561e0fa7cf0f132655adf27447a56bc7861b155ea7/fontMath-0.4.5.zip"
-    sha256 "a35dde1d500bcb9d659916aa820f31bc7184fe4950708ffc00450e9ecd6c243f"
+    url "https://files.pythonhosted.org/packages/1f/de/c9962d805d03116f8f8369969f889a4337caa18e5f001fa3b844a14440dc/fontMath-0.4.7.zip"
+    sha256 "6d80531c5ccdd2a6f01ce2b97b19aa133ea206a2edab26b3716d9b0306dd0bf5"
   end
 
   resource "fontPens" do
