@@ -11,8 +11,8 @@ class Syncthing < Formula
 
   devel do
     url "https://github.com/syncthing/syncthing.git",
-      :tag => "v0.14.50-rc.2",
-      :revision => "7c0798b6224e6407e3b0872b204b6fc224d70325"
+      :tag => "v0.14.50-rc.3",
+      :revision => "09aff7bb14f99d2c7ca06b8a1207228c4ef15d95"
   end
 
   bottle :unneeded
