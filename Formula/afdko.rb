@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/ff/5c/a300808dc7283c9aedf626774c779dfd3e1da80ed138549b211c3b5eadcc/afdko-2.8.0rc0.tar.gz"
-  sha256 "76429dc85f4829d7c10896dcde4898bec428529fc8c8b7381e4f4df3b06d8d50"
+  url "https://files.pythonhosted.org/packages/97/a1/76ae4f9f35455ca58e99f21cbc5ca9bba59fa0864a203f9cc9b3235f1904/afdko-2.8.2.tar.gz"
+  sha256 "677c08eaebd1c0b59ae2316016101b273421f1079f3d5659245d7fecbf916be0"
   head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
@@ -17,8 +17,8 @@ class Afdko < Formula
   end
 
   resource "defcon" do
-    url "https://files.pythonhosted.org/packages/70/3f/96f57f6f5953881f9e9e95bcbc30da43d593ebbfb3ea653786e40bbe057a/defcon-0.5.2.zip"
-    sha256 "bcd6539247d034918c4df687fdaa6e64fbca939cf9b34aee506527e95190f2dc"
+    url "https://files.pythonhosted.org/packages/5a/07/5416dfe5d133b9c994ab4846af3aa9b5405dcb0e09d73b41769621d34455/defcon-0.5.3.zip"
+    sha256 "4c1b45c3d8bc24ec2560f355a899f853ddb715b401862e8c99aaefdec8599de0"
   end
 
   resource "fontMath" do
@@ -32,8 +32,8 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/2e/92/d532aa1cfcd0870cf0144c1ba0e24e38eb82bbaba5771a352c762b7e3e30/fonttools-3.29.0.zip"
-    sha256 "aab38c8c131670684321437d4857dcb4de1c775efd152a9ca9c4d81f1cb97fe7"
+    url "https://files.pythonhosted.org/packages/7e/c2/a2070393dd8284e31d6dfd8f7537bd87aee5c4aa65127d27bf0561edac82/fonttools-3.29.1.zip"
+    sha256 "a687ca070daddb7ee25e3472b631acd0e53dbf11ecdf8e76248ee556472ede9d"
   end
 
   resource "MutatorMath" do
@@ -42,8 +42,8 @@ class Afdko < Formula
   end
 
   resource "psautohint" do
-    url "https://files.pythonhosted.org/packages/d0/d5/d660a735784c8498b099d352bf86c6cfd72f697d9e5c08f9fa2bac1397b9/psautohint-1.7.0.zip"
-    sha256 "629d3e58de8cdc7d048f093b1562fd85abd817d2852760a65825d11b8ce2defc"
+    url "https://files.pythonhosted.org/packages/c3/98/79e846ae8b0ac77a5d2a303d66e7b77a2c4c7015155ab4e8fa2006b0f3fb/psautohint-1.8.1.zip"
+    sha256 "14f33792bf0ba1496b6d04e585bfff3480b6b0e896094895189f158cf08760ff"
   end
 
   resource "ufoLib" do

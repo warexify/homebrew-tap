@@ -5,7 +5,7 @@ cask 'colorpicker-launcher' do
   url "https://github.com/nrlquaker/color-picker-launcher/releases/download/v#{version}/color.picker.v#{version}.zip"
   appcast 'https://github.com/nrlquaker/color-picker-launcher/releases.atom'
   name 'Color Picker'
-  homepage 'https://github.com/nrlquaker/color-picker-launcher'
+  homepage 'https://github.com/nrlquaker/color-picker-launcher/'
 
   app 'Color Picker.app'
 

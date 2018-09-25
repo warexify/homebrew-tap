@@ -6,7 +6,7 @@ cask 'oclint' do
   url "https://github.com/oclint/oclint/releases/download/v#{version.before_comma}/oclint-#{version.before_comma}-x86_64-darwin-#{version.after_comma}.tar.gz"
   appcast 'https://github.com/oclint/oclint/releases.atom'
   name 'OCLint'
-  homepage 'http://oclint.org/'
+  homepage 'https://oclint.org/'
 
   binary "oclint-#{version.before_comma}/bin/oclint"
   binary "oclint-#{version.before_comma}/bin/oclint-json-compilation-database"

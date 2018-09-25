@@ -4,7 +4,7 @@ cask 'fastdmg' do
 
   url 'https://sveinbjorn.org/files/software/FastDMG.zip'
   name 'FastDMG'
-  homepage 'https://sveinbjorn.org/fastdmg'
+  homepage 'https://sveinbjorn.org/fastdmg/'
 
   app 'FastDMG.app'
 end
