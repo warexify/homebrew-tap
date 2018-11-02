@@ -1,8 +1,8 @@
 class MarathonSwift < Formula
   desc "Makes it easy to write, run and manage your Swift scripts"
   homepage "https://github.com/JohnSundell/Marathon"
-  url "https://github.com/JohnSundell/Marathon/archive/3.0.0.tar.gz"
-  sha256 "5dd1f495a8d69d9c3450735b771f816a838a040a45c682b0c42ac17105058a6e"
+  url "https://github.com/JohnSundell/Marathon/archive/3.1.0.tar.gz"
+  sha256 "98f454bd788d8e6dc670c99f1fbafdfd1dd0cb75b09a5db3d407e5ef31265120"
   head "https://github.com/JohnSundell/Marathon.git"
 
   bottle :unneeded

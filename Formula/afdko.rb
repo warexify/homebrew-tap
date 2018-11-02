@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://files.pythonhosted.org/packages/97/a1/76ae4f9f35455ca58e99f21cbc5ca9bba59fa0864a203f9cc9b3235f1904/afdko-2.8.2.tar.gz"
-  sha256 "677c08eaebd1c0b59ae2316016101b273421f1079f3d5659245d7fecbf916be0"
+  url "https://files.pythonhosted.org/packages/e7/f2/9ebf15ef86db023d12fdc04d4c30ae3585f8dde531b3f27a7a6e13f7f48c/afdko-2.8.3.tar.gz"
+  sha256 "2d777a5c5f1d03ac963b533dca4fa374d4fc2e1d04952187b5f1bb8e50e901f6"
   head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
@@ -14,6 +14,11 @@ class Afdko < Formula
   resource "booleanOperations" do
     url "https://files.pythonhosted.org/packages/69/6c/3a75fb491bafd4d485f13b100cd0830399920ade0b605ca55052cfbec5ee/booleanOperations-0.8.0.zip"
     sha256 "62723b7cabe3e727546df945c155e2f8be9514ef8c4f3b2f0f5cdb24ebbcfdf1"
+  end
+
+  resource "cu2qu" do
+    url "https://files.pythonhosted.org/packages/29/33/6186137547733d15ae15ad00bc81688d474fdbb7e1aad4ee35c1d5228936/cu2qu-1.6.4.zip"
+    sha256 "8ffda9ab0dec7f6249a93432c274d62a72b9a0ee6787b8027929ced3d6585fb5"
   end
 
   resource "defcon" do
@@ -32,8 +37,8 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/7e/c2/a2070393dd8284e31d6dfd8f7537bd87aee5c4aa65127d27bf0561edac82/fonttools-3.29.1.zip"
-    sha256 "a687ca070daddb7ee25e3472b631acd0e53dbf11ecdf8e76248ee556472ede9d"
+    url "https://files.pythonhosted.org/packages/4b/56/451957211a7e308ef0c75694c00d7cfedf3a617a09b6574bee03ee11ecb2/fonttools-3.31.0.zip"
+    sha256 "c9a726a29fb4e573ee18b296e0a193ca18bc3d3ecf1c78bd4d92c77aa7a92752"
   end
 
   resource "MutatorMath" do
@@ -47,13 +52,23 @@ class Afdko < Formula
   end
 
   resource "ufoLib" do
-    url "https://files.pythonhosted.org/packages/b4/9e/e508b19cb9b0fb3b5a8d06e6a10d7a4dd06899cf97cf35a664c00d12acc5/ufoLib-2.3.1.zip"
-    sha256 "6deceb5e4aeef719b3fadc631450da74c01def48b7ee4d25753a41261f69e6cb"
+    url "https://files.pythonhosted.org/packages/90/10/a170501b56ecdc439ec1064b1f7db1e5bbab0ac052fe134b82880074e512/ufoLib-2.3.2.zip"
+    sha256 "2bc337a78b104e554e3e75c7c99fa1c8b305e2f82022743a34d5c77e2bca29e5"
+  end
+
+  resource "lxml" do
+    url "https://files.pythonhosted.org/packages/4b/20/ddf5eb3bd5c57582d2b4652b4bbcf8da301bdfe5d805cb94e805f4d7464d/lxml-4.2.5.tar.gz"
+    sha256 "36720698c29e7a9626a0dc802ef8885f8f0239bfd1689628ecd459a061f2807f"
   end
 
   resource "ufonormalizer" do
     url "https://files.pythonhosted.org/packages/3b/78/a4045238bd89ea9e4362de370bff374583f1d7f30f71a4d1845babb24357/ufonormalizer-0.3.5.zip"
     sha256 "634d49e647f562fb4b07ac38b902a92aacd215929c157d3eef2d78f39fb335fe"
+  end
+
+  resource "ufoProcessor" do
+    url "https://files.pythonhosted.org/packages/07/6f/0c6fb942e5b041cdaadcd86e4437aec357a963dc6f36a32421676b52af56/ufoProcessor-1.0.1.zip"
+    sha256 "2e78d6987f7605093798714f81cae8d274a5195b86b3005425d7c3490fbf8e74"
   end
 
   def install
