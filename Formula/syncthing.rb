@@ -5,14 +5,14 @@ class Syncthing < Formula
 
   stable do
     url "https://github.com/syncthing/syncthing.git",
-      :tag => "v0.14.51",
-      :revision => "03821d8bd3bcff790a4be3fda92c13c59c5dec80"
+      :tag      => "v0.14.52",
+      :revision => "3bc918ff7841838f067720171d39366d34760da6"
   end
 
   devel do
     url "https://github.com/syncthing/syncthing.git",
-      :tag => "v0.14.52-rc.3",
-      :revision => "3bc918ff7841838f067720171d39366d34760da6"
+      :tag      => "v0.14.53-rc.1",
+      :revision => "ba4554f053bd548a5d460db9809ada0b6e02d1a9"
   end
 
   bottle :unneeded
@@ -24,7 +24,6 @@ class Syncthing < Formula
     (buildpath/"src/github.com/syncthing/syncthing").install buildpath.children
     ENV.append_path "PATH", buildpath/"bin"
     cd "src/github.com/syncthing/syncthing" do
-      # system "go", "run", "build.go", "-no-upgrade", "tar"
       system "./build.sh", "noupgrade"
       bin.install "syncthing"
       man1.install Dir["man/*.1"]
