@@ -41,6 +41,6 @@ class AfdkoLegacy < Formula
   end
 
   test do
-    system "makeotf", "-h"
+    system "#{bin}/makeotf", "-h"
   end
 end

@@ -15,6 +15,6 @@ class Keyboardswitcher < Formula
   end
 
   test do
-    system "keyboardSwitcher"
+    system "#{bin}/keyboardSwitcher"
   end
 end
