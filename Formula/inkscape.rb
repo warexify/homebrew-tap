@@ -55,7 +55,6 @@ class Inkscape < Formula
   end
 
   def install
-    ENV.cxx11
     ENV.append "LDFLAGS", "-liconv"
 
     system "mkdir", "build"
