@@ -1,9 +1,9 @@
 class Mtoc < Formula
   desc "Convert a Mach-O file to a PECOFF file"
   homepage "https://opensource.apple.com/"
-  url "https://opensource.apple.com/tarballs/cctools/cctools-895.tar.gz"
-  sha256 "ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7"
-  version "895"
+  url "https://opensource.apple.com/tarballs/cctools/cctools-921.tar.gz"
+  sha256 "53449a7f2e316c7df5e6b94fd04e12b6d0356f2487d77aad3000134e4c010cc5"
+  version "921"
 
   bottle :unneeded
 
