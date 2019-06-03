@@ -3,8 +3,8 @@ class Searchfs < Formula
   homepage "https://sveinbjorn.org/searchfs"
   url "https://sveinbjorn.org/files/software/searchfs.zip"
   head "https://github.com/sveinbjornt/searchfs.git"
-  sha256 "a4bf7303bebed9ff6f7f440d3b23022d39e72521e59ec2400ac6631512f3b394"
-  version "0.1"
+  sha256 "b80126e1ccb87e537307635f369d9ab7ac01a31a67cb1a6a13e6b1db042d9499"
+  version "0.3"
 
   bottle :unneeded
 

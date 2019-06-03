@@ -5,14 +5,14 @@ class Syncthing < Formula
 
   stable do
     url "https://github.com/syncthing/syncthing.git",
-      :tag      => "v0.14.54",
-      :revision => "da39dfada33fe152c1d2297ff69dbf0739564516"
+      :tag      => "v1.1.3",
+      :revision => "a04fcfe7494a6e3ede091534597539b77dc05a52"
   end
 
   devel do
     url "https://github.com/syncthing/syncthing.git",
-      :tag      => "v0.14.55-rc.2",
-      :revision => "abb3fb8a3194c3c0f1c22517bfc7b5c65da0f8ff"
+      :tag      => "v1.1.4-rc.1",
+      :revision => "e4956358fbab0d78e975d474acba2a0d098e4adc"
   end
 
   bottle :unneeded

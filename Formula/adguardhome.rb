@@ -3,8 +3,8 @@ require "language/node"
 class Adguardhome < Formula
   desc "Network-wide ads & trackers blocking DNS server"
   homepage "https://adguard.com/en/adguard-dns/overview.html"
-  url "https://github.com/AdguardTeam/AdGuardHome/archive/v0.91.tar.gz"
-  sha256 "f9149dc94245dc071b50ab8efbf73f30b06236e2f5f34e9b08693f8d7eb62669"
+  url "https://github.com/AdguardTeam/AdGuardHome/archive/v0.95-hotfix.tar.gz"
+  sha256 "ae0af5532c7752769ad129dcc070a3c5a202b7918e74a51cad388ae4ea32eb0e"
   head "https://github.com/AdguardTeam/AdGuardHome.git"
 
   bottle :unneeded
