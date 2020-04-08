@@ -1,6 +1,6 @@
 cask 'fontforge' do
-  version '2019-06-03-9fb69fc'
-  sha256 '5b95bdf88a836859be8fdd85ad423569fa6948ae004f0c889d6a7af395ec8e3b'
+  version '2020-04-05-1604c74'
+  sha256 '4389f7253793ba77f8d17c3d8b1bf506363627d0fadad42abb9e9f7e5fc1c12c'
 
   # dl.bintray.com was verified as official when first introduced to the cask
   url "https://dl.bintray.com/fontforge/fontforge/:FontForge-#{version}.app.dmg"
