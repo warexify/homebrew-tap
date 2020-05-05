@@ -1,8 +1,8 @@
 class Fontforge < Formula
   desc "Command-line outline and bitmap font editor/converter"
   homepage "https://fontforge.github.io"
-  url "https://github.com/fontforge/fontforge/releases/download/20170731/fontforge-dist-20170731.tar.xz"
-  sha256 "840adefbedd1717e6b70b33ad1e7f2b116678fa6a3d52d45316793b9fd808822"
+  url "https://github.com/fontforge/fontforge/releases/download/20190801/fontforge-20190801.tar.gz"
+  sha256 "d92075ca783c97dc68433b1ed629b9054a4b4c74ac64c54ced7f691540f70852"
   head "https://github.com/fontforge/fontforge.git"
 
   bottle :unneeded
@@ -12,43 +12,37 @@ class Fontforge < Formula
     depends_on "automake" => :build
   end
 
-  option "with-giflib", "Build with GIF support"
   option "with-extra-tools", "Build with additional font tools"
 
-  deprecated_option "with-gif" => "with-giflib"
-
   depends_on "pkg-config" => :build
-  depends_on "libtool"
-  depends_on "gettext"
-  depends_on "pango"
   depends_on "cairo"
   depends_on "fontconfig"
-  depends_on "libpng"
-  depends_on "jpeg" => :recommended
-  depends_on "libtiff" => :recommended
+  depends_on "freetype"
+  depends_on "gettext"
   depends_on "giflib" => :optional
+  depends_on "glib"
+  depends_on "jpeg" => :recommended
+  depends_on "libpng"
   depends_on "libspiro" => :optional
+  depends_on "libtiff" => :recommended
+  depends_on "libtool"
   depends_on "libuninameslist" => :optional
-  depends_on "gtk+3"
-  depends_on "python@2"
+  depends_on "pango"
+  depends_on "python"
+  depends_on "readline"
   depends_on "woff2" => :recommended
+  uses_from_macos "libxml2"
 
-  stable do
-    patch do
-      url "https://github.com/fontforge/fontforge/commit/9f69bd0f9.patch?full_index=1"
-      sha256 "f8afa9a6ab7a71650a3f013d9872881754e1ba4a265f693edd7ba70f2ec1d525"
-    end
-  end
-
-  def install
-    ENV["PYTHON_CFLAGS"] = `python-config --cflags`.chomp
-    ENV["PYTHON_LIBS"] = `python-config --ldflags`.chomp
+def install
+    ENV["PYTHON_CFLAGS"] = `python3-config --cflags`.chomp
+    ENV["PYTHON_LIBS"] = `python3-config --ldflags`.chomp
 
     args = %W[
       --prefix=#{prefix}
+      --enable-python-scripting=3
       --disable-silent-rules
       --disable-dependency-tracking
-      --enable-gdk=gdk3
+      --without-x
     ]
 
     args << "--without-libjpeg" if build.without? "jpeg"
@@ -87,7 +81,8 @@ class Fontforge < Formula
   test do
     system bin/"fontforge", "-version"
     system bin/"fontforge", "-lang=py", "-c", "import fontforge; fontforge.font()"
-    ENV.append_path "PYTHONPATH", lib/"python2.7/site-packages"
-    system "python2.7", "-c", "import fontforge; fontforge.font()"
+    xy = Language::Python.major_minor_version "python3"
+    ENV.append_path "PYTHONPATH", lib/"python#{xy}/site-packages"
+    system "python3", "-c", "import fontforge; fontforge.font()"
   end
 end
