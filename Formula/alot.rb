@@ -3,8 +3,8 @@ class Alot < Formula
 
   desc "Text mode MUA using notmuch mail"
   homepage "https://github.com/pazz/alot"
-  url "https://github.com/pazz/alot/archive/0.8.1.tar.gz"
-  sha256 "823e2fae014c1036609068c6109042b676113a382eacbd04eb3dfa461ef53953"
+  url "https://github.com/pazz/alot/archive/0.9.tar.gz"
+  sha256 "64bfa2f550d775940348c93532bf5cbdde57b9fcec4bcf2447a72510d2add6cf"
   head "https://github.com/pazz/alot.git"
 
   bottle :unneeded
@@ -64,13 +64,13 @@ class Alot < Formula
   end
 
   resource "Twisted" do
-    url "https://files.pythonhosted.org/packages/90/50/4c315ce5d119f67189d1819629cae7908ca0b0a6c572980df5cc6942bc22/Twisted-18.7.0.tar.bz2"
-    sha256 "95ae985716e8107816d8d0df249d558dbaabb677987cc2ace45272c166b267e4"
+    url "https://files.pythonhosted.org/packages/4a/b4/4973c7ccb5be2ec0abc779b7d5f9d5f24b17b0349e23240cfc9dc3bd83cc/Twisted-20.3.0.tar.bz2"
+    sha256 "d72c55b5d56e176563b91d11952d13b01af8725c623e498db5507b6614fc1e10"
   end
 
   resource "urwid" do
-    url "https://files.pythonhosted.org/packages/c7/90/415728875c230fafd13d118512bde3184d810d7bf798a631abc05fac09d0/urwid-2.0.1.tar.gz"
-    sha256 "644d3e3900867161a2fc9287a9762753d66bd194754679adb26aede559bcccbc"
+    url "https://files.pythonhosted.org/packages/45/dd/d57924f77b0914f8a61c81222647888fbb583f89168a376ffeb5613b02a6/urwid-2.1.0.tar.gz"
+    sha256 "0896f36060beb6bf3801cb554303fef336a79661401797551ba106d23ab4cd86"
   end
 
   resource "urwidtrees" do

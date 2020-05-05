@@ -1,8 +1,8 @@
 class Ots < Formula
   desc "OpenType Sanitiser parses validates & sanitizes OpenType & WOFF2 font files"
   homepage "https://github.com/khaledhosny/ots"
-  url "https://github.com/khaledhosny/ots/releases/download/v7.1.9/ots-7.1.9.tar.xz"
-  sha256 "dc1e4847d7cab473b95d274aa11ec85a3553d999fc97ff6fb686d5c69919c830"
+  url "https://github.com/khaledhosny/ots/releases/download/v8.0.0/ots-8.0.0.tar.xz"
+  sha256 "00aed968f88d492bc42e9ddb941bda9502267d54c51021ad071b51effaa0401a"
 
   head "https://github.com/khaledhosny/ots.git"
 
