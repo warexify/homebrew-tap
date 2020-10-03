@@ -11,11 +11,10 @@ class UniversalCtags < Formula
   depends_on "libyaml" => :optional
   conflicts_with "ctags", :because => "this formula installs the same executable as the ctags formula"
 
-  bottle :unneeded
-
   def install
     opts = []
     opts << "--disable-xml" if build.without? "xml"
+
     system "./autogen.sh"
     system "./configure", "--prefix=#{prefix}", *opts
     system "make"

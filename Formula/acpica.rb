@@ -1,8 +1,8 @@
 class Acpica < Formula
   desc "OS-independent implementation of the ACPI specification"
   homepage "https://www.acpica.org/"
-  url "https://acpica.org/sites/acpica/files/acpica-unix-20200430.tar.gz"
-  sha256 "fb807f1dec31664f972af37d213abf72987afe33abf68c83051e298da35d297c"
+  url "https://acpica.org/sites/acpica/files/acpica-unix-20200717.tar.gz"
+  sha256 "cb99903ef240732f395af40c23b9b19c7899033f48840743544eebb6da72a828"
   head "https://github.com/acpica/acpica.git"
 
   bottle :unneeded
