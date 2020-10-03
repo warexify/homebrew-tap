@@ -9,12 +9,6 @@ class Syncthing < Formula
       :revision => "a04fcfe7494a6e3ede091534597539b77dc05a52"
   end
 
-  devel do
-    url "https://github.com/syncthing/syncthing.git",
-      :tag      => "v1.1.4-rc.1",
-      :revision => "e4956358fbab0d78e975d474acba2a0d098e4adc"
-  end
-
   bottle :unneeded
 
   depends_on "go" => :build
