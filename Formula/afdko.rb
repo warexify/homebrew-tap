@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://github.com/adobe-type-tools/afdko/releases/download/3.5.1/afdko-3.5.1.tar.gz"
-  sha256 "14568af084eee8c60cdc9443e1fac47d6e84f850597906fa426f963662fe225c"
+  url "https://github.com/adobe-type-tools/afdko/releases/download/3.6.0/afdko-3.6.0.tar.gz"
+  sha256 "c79309faa12e5c7d201bc39359c2cf3103d704b7cbf2751190344e95b9f768bd"
   head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
@@ -12,8 +12,8 @@ class Afdko < Formula
   depends_on "python"
 
   resource "lxml" do
-    url "https://files.pythonhosted.org/packages/2c/4d/3ec1ea8512a7fbf57f02dee3035e2cce2d63d0e9c0ab8e4e376e01452597/lxml-4.5.2.tar.gz"
-    sha256 "cdc13a1682b2a6241080745b1953719e7fe0850b40a5c71ca574f090a1391df6"
+    url "https://files.pythonhosted.org/packages/db/f7/43fecb94d66959c1e23aa53d6161231dca0e93ec500224cf31b3c4073e37/lxml-4.6.2.tar.gz"
+    sha256 "cd11c7e8d21af997ee8079037fff88f16fda188a9776eb4b81c7e4c9c0a7d7fc"
   end
 
   resource "booleanOperations" do
@@ -32,8 +32,8 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/9a/ac/baa50a8bb471a2a80d498cba7d7379c76aed4a453894248346bffdd1611c/fonttools-4.14.0.zip"
-    sha256 "65744b52eee9da4e6ece77e0f8be1f79ab75f30d0b161ce667e9e2e2ed00b0d1"
+    url "https://files.pythonhosted.org/packages/3d/f9/ebd619f1393d4536bbf4becb9ffc41d95d01b38441244b28fa39b827db4a/fonttools-4.18.2.zip"
+    sha256 "5c50af6fb9b4de4609c0e5558f3444c20f8632aa319319a7ef14fd5ba677c9f8"
   end
 
   resource "MutatorMath" do
@@ -42,18 +42,18 @@ class Afdko < Formula
   end
 
   resource "psautohint" do
-    url "https://files.pythonhosted.org/packages/c7/ef/9d750366d912b6ad5701b023e6591bc30d8b9870c5f594cebca53d73819f/psautohint-2.1.0.zip"
-    sha256 "8ea8d643136a3a27df03ed0ff1eb937f35ae099e4621c537470b76aa131248fd"
+    url "https://files.pythonhosted.org/packages/c4/02/619a83fba0db10443c9cd68ed6ce6de38fef12d55d7f8e2a0c148ea775c8/psautohint-2.2.0.zip"
+    sha256 "4e3c6e62c8c890492987b69904d06cc313b79aa99104d35b60cbed60fbbc8485"
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/7c/a2/4cc95d7766a5d17ea2541d88da357d5905f75b6dbdfd17dfffd6c37647ae/tqdm-4.48.2.tar.gz"
-    sha256 "564d632ea2b9cb52979f7956e093e831c28d441c11751682f84c86fc46e4fd21"
+    url "https://files.pythonhosted.org/packages/80/e9/a51c724ce67ff24a18861af5b0c6f9468e4b4ecdbd53fd43a9288b856372/tqdm-4.54.1.tar.gz"
+    sha256 "38b658a3e4ecf9b4f6f8ff75ca16221ae3378b2e175d846b6b33ea3a20852cf5"
   end
 
   resource "ufonormalizer" do
-    url "https://files.pythonhosted.org/packages/2f/3c/7cc72dc22fcc5af362a15f7d8c04e6cfda6f730cacbbf8ba811bdda8e6a8/ufonormalizer-0.4.2.zip"
-    sha256 "f2739eaa8df3cd4e60894b22679a882505252b93f12657a0993894108122c6e6"
+    url "https://files.pythonhosted.org/packages/e6/98/c329e162c0b6829bd473cb50c7cc933ce14ecfbbf541d56d92768f435592/ufonormalizer-0.5.2.zip"
+    sha256 "f2d543d82648cc2ffe2b2d1de882b9116f19955d08f3829df6e38e6d9b6d690e"
   end
 
   resource "ufoProcessor" do
