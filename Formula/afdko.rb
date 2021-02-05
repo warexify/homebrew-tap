@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://github.com/adobe-type-tools/afdko/releases/download/3.6.0/afdko-3.6.0.tar.gz"
-  sha256 "c79309faa12e5c7d201bc39359c2cf3103d704b7cbf2751190344e95b9f768bd"
+  url "https://github.com/adobe-type-tools/afdko/releases/download/3.6.2a1/afdko-3.6.2a1.tar.gz"
+  sha256 "02d8064bac6249acea48c02033816ef14b3608ff6d1a28cdac85096485e36043"
   head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
@@ -32,8 +32,8 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/3d/f9/ebd619f1393d4536bbf4becb9ffc41d95d01b38441244b28fa39b827db4a/fonttools-4.18.2.zip"
-    sha256 "5c50af6fb9b4de4609c0e5558f3444c20f8632aa319319a7ef14fd5ba677c9f8"
+    url "https://files.pythonhosted.org/packages/97/10/fff006d7a88faa7b959fdf97cebe348afb6d61f626790298821d136d1f79/fonttools-4.19.1.zip"
+    sha256 "4a2b8450bd3b1c23e6259d37c0f1e403519c91b8373b83bb9e3c6e70748cf07b"
   end
 
   resource "MutatorMath" do
@@ -47,13 +47,13 @@ class Afdko < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/80/e9/a51c724ce67ff24a18861af5b0c6f9468e4b4ecdbd53fd43a9288b856372/tqdm-4.54.1.tar.gz"
-    sha256 "38b658a3e4ecf9b4f6f8ff75ca16221ae3378b2e175d846b6b33ea3a20852cf5"
+    url "https://files.pythonhosted.org/packages/69/50/9f29874d835945b845812799edc732ba30c41e9d20431f9f69c8ffb9c670/tqdm-4.56.0.tar.gz"
+    sha256 "fe3d08dd00a526850568d542ff9de9bbc2a09a791da3c334f3213d8d0bbbca65"
   end
 
   resource "ufonormalizer" do
-    url "https://files.pythonhosted.org/packages/e6/98/c329e162c0b6829bd473cb50c7cc933ce14ecfbbf541d56d92768f435592/ufonormalizer-0.5.2.zip"
-    sha256 "f2d543d82648cc2ffe2b2d1de882b9116f19955d08f3829df6e38e6d9b6d690e"
+    url "https://files.pythonhosted.org/packages/27/44/3805b98e5c17b42c17e2add281768625e80bef84fd3a8a8d4267e44ba071/ufonormalizer-0.5.3.zip"
+    sha256 "7165d7ff4b58a17e498aba8e809ba5dd67e5ed2e6e411b64722ea76d4f324c46"
   end
 
   resource "ufoProcessor" do

@@ -7,7 +7,7 @@ class Directhw < Formula
 
   bottle :unneeded
 
-  depends_on :xcode => :build
+  depends_on xcode: :build
 
   def install
     system "make", "main"

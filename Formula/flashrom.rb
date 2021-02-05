@@ -8,9 +8,9 @@ class Flashrom < Formula
   bottle :unneeded
 
   depends_on "pkg-config" => :build
+  depends_on "directhw"
   depends_on "libftdi0"
   depends_on "libusb-compat"
-  depends_on "directhw"
   depends_on "pciutils"
 
   def install

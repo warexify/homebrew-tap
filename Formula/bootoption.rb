@@ -7,7 +7,7 @@ class Bootoption < Formula
 
   bottle :unneeded
 
-  depends_on :xcode => ["9.0", :build]
+  depends_on xcode: ["9.0", :build]
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"

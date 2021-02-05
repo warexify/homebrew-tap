@@ -1,7 +1,7 @@
 require "English"
 
 class Iwyu < Formula
-  desc "analyze includes in C and C++ source files"
+  desc "Analyze includes in C and C++ source files"
   homepage "https://include-what-you-use.org"
   url "https://include-what-you-use.org/downloads/include-what-you-use-0.8-x86_64-apple-darwin.tar.gz"
   version "0.8"

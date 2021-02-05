@@ -7,7 +7,7 @@ class ClassDump < Formula
 
   bottle :unneeded
 
-  depends_on :xcode => :build
+  depends_on xcode: :build
 
   def install
     xcodebuild "-configuration", "Release", "SYMROOT=build", "PREFIX=#{prefix}"

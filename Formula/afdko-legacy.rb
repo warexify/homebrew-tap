@@ -10,9 +10,12 @@ class AfdkoLegacy < Formula
   def install
     if build.stable?
       prefix.install Dir["FDK-25-MAC.b65322/*"]
-      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_EXE_PATH="${cmdDirPath}"', "AFDKO_EXE_PATH=#{prefix}/Tools/osx"
-      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_Python="${cmdDirPath}"/Python/Current/bin/python', "AFDKO_Python=#{prefix}/Tools/osx/Python/Current/bin/python"
-      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_Scripts="${AFDKO_EXE_PATH}"/../SharedData/FDKScripts', "AFDKO_Scripts=#{prefix}/Tools/SharedData/FDKScripts"
+      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_EXE_PATH="${cmdDirPath}"',
+"AFDKO_EXE_PATH=#{prefix}/Tools/osx"
+      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_Python="${cmdDirPath}"/Python/Current/bin/python',
+"AFDKO_Python=#{prefix}/Tools/osx/Python/Current/bin/python"
+      inreplace "#{prefix}/Tools/osx/setFDKPaths", 'AFDKO_Scripts="${AFDKO_EXE_PATH}"/../SharedData/FDKScripts',
+"AFDKO_Scripts=#{prefix}/Tools/SharedData/FDKScripts"
       bin.install_symlink %w[
         AFDKOPython IS autohint autohintexe charplot checkOutlines checkOutlinesUFO checkoutlinesexe
         compareFamily copyCFFCharstrings detype1 digiplot fontplot fontplot2 fontsetplot hintplot kernCheck

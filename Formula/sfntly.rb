@@ -1,7 +1,7 @@
 class Sfntly < Formula
   desc "Library for Using, Editing, and Creating SFNT-based Fonts"
   homepage "https://github.com/googlei18n/sfntly"
-  url "https://github.com/googlei18n/sfntly.git", :using => :git
+  url "https://github.com/googlei18n/sfntly.git", using: :git
   version "0.0.1"
 
   bottle :unneeded

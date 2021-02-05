@@ -1,10 +1,10 @@
 class Osxiconutils < Formula
-  desc "A set of command line utilities for working with Mac icns files"
+  desc "Set of command-line utilities for working with Mac icns files"
   homepage "https://sveinbjorn.org/osxiconutils"
   url "https://sveinbjorn.org/files/software/osxiconutils.zip"
-  head "https://github.com/sveinbjornt/osxiconutils.git"
-  sha256 "d7a58dc32a5a8596973c2aee3c5698d28ca5df7650882b18e9bfa295a5241f83"
   version "0.1"
+  sha256 "d7a58dc32a5a8596973c2aee3c5698d28ca5df7650882b18e9bfa295a5241f83"
+  head "https://github.com/sveinbjornt/osxiconutils.git"
 
   bottle :unneeded
 

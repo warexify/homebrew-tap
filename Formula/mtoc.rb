@@ -2,8 +2,8 @@ class Mtoc < Formula
   desc "Convert a Mach-O file to a PECOFF file"
   homepage "https://opensource.apple.com/"
   url "https://opensource.apple.com/tarballs/cctools/cctools-921.tar.gz"
-  sha256 "53449a7f2e316c7df5e6b94fd04e12b6d0356f2487d77aad3000134e4c010cc5"
   version "921"
+  sha256 "53449a7f2e316c7df5e6b94fd04e12b6d0356f2487d77aad3000134e4c010cc5"
 
   bottle :unneeded
 
@@ -28,10 +28,10 @@ class Mtoc < Formula
 
     args << "SDK=-std=gnu99"
 
-    if Hardware::CPU.intel?
-      archs = "i386 x86_64"
+    archs = if Hardware::CPU.intel?
+      "i386 x86_64"
     else
-      archs = "ppc i386 x86_64"
+      "ppc i386 x86_64"
     end
 
     args << "RC_ARCHS=#{archs}"

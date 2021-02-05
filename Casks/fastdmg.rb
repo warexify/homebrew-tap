@@ -1,10 +1,10 @@
-cask 'fastdmg' do
+cask "fastdmg" do
   version :latest
   sha256 :no_check
 
-  url 'https://sveinbjorn.org/files/software/FastDMG.zip'
-  name 'FastDMG'
-  homepage 'https://sveinbjorn.org/fastdmg/'
+  url "https://sveinbjorn.org/files/software/FastDMG.zip"
+  name "FastDMG"
+  homepage "https://sveinbjorn.org/fastdmg/"
 
-  app 'FastDMG.app'
+  app "FastDMG.app"
 end

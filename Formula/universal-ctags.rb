@@ -9,7 +9,7 @@ class UniversalCtags < Formula
   depends_on "docutils" => :optional
   depends_on "jansson" => :optional
   depends_on "libyaml" => :optional
-  conflicts_with "ctags", :because => "this formula installs the same executable as the ctags formula"
+  conflicts_with "ctags", because: "this formula installs the same executable as the ctags formula"
 
   def install
     opts = []

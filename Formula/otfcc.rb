@@ -1,5 +1,5 @@
 class Otfcc < Formula
-  desc "Parses & writes SFNT structures."
+  desc "Parses & writes SFNT structures"
   homepage "https://github.com/caryll/otfcc/releases/"
   url "https://github.com/caryll/otfcc/archive/v0.10.4.tar.gz"
   sha256 "d9c74825ddac700eb429de31de7cb0a249636f47c6a4cc64eaa102a40966cf00"

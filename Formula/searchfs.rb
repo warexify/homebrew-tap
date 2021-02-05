@@ -2,16 +2,14 @@ class Searchfs < Formula
   desc "Quickly search by filename on entire HFS+ and APFS volumes"
   homepage "https://sveinbjorn.org/searchfs"
   url "https://sveinbjorn.org/files/software/searchfs.zip"
-  head "https://github.com/sveinbjornt/searchfs.git"
-  sha256 "b80126e1ccb87e537307635f369d9ab7ac01a31a67cb1a6a13e6b1db042d9499"
   version "0.3"
+  sha256 "b80126e1ccb87e537307635f369d9ab7ac01a31a67cb1a6a13e6b1db042d9499"
+  head "https://github.com/sveinbjornt/searchfs.git"
 
   bottle :unneeded
 
   def install
-    if build.stable?
-      bin.install "searchfs"
-    end
+    bin.install "searchfs" if build.stable?
 
     if build.head?
       system "make"

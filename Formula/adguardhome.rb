@@ -33,78 +33,80 @@ class Adguardhome < Formula
     (prefix/"AdGuardHome.yaml").write yaml
   end
 
-  def yaml; <<~EOS
-    bind_host: 127.0.0.1
-    bind_port: 3000
-    auth_name: ""
-    auth_pass: ""
-    language: ""
-    coredns:
-      port: 5353
-      protection_enabled: true
-      filtering_enabled: true
-      safebrowsing_enabled: false
-      safesearch_enabled: false
-      parental_enabled: false
-      parental_sensitivity: 0
-      blocked_response_ttl: 10
-      querylog_enabled: true
-      ratelimit: 20
-      refuse_any: true
-      bootstrap_dns: 1.1.1.1:53
-      upstream_dns:
-      - tls://1.1.1.1
-      - tls://1.0.0.1
-      - tls://2606:4700:4700::1111
-      - tls://2606:4700:4700::1001
-    filters:
-    - enabled: true
-      url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-      name: AdGuard Simplified Domain Names filter
-      id: 1
-    - enabled: false
-      url: https://adaway.org/hosts.txt
-      name: AdAway
-      id: 2
-    - enabled: false
-      url: https://hosts-file.net/ad_servers.txt
-      name: hpHosts - Ad and Tracking servers only
-      id: 3
-    - enabled: false
-      url: http://www.malwaredomainlist.com/hostslist/hosts.txt
-      name: MalwareDomainList.com Hosts List
-      id: 4
-    schema_version: 1
-  EOS
+  def yaml
+    <<~EOS
+      bind_host: 127.0.0.1
+      bind_port: 3000
+      auth_name: ""
+      auth_pass: ""
+      language: ""
+      coredns:
+        port: 5353
+        protection_enabled: true
+        filtering_enabled: true
+        safebrowsing_enabled: false
+        safesearch_enabled: false
+        parental_enabled: false
+        parental_sensitivity: 0
+        blocked_response_ttl: 10
+        querylog_enabled: true
+        ratelimit: 20
+        refuse_any: true
+        bootstrap_dns: 1.1.1.1:53
+        upstream_dns:
+        - tls://1.1.1.1
+        - tls://1.0.0.1
+        - tls://2606:4700:4700::1111
+        - tls://2606:4700:4700::1001
+      filters:
+      - enabled: true
+        url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        name: AdGuard Simplified Domain Names filter
+        id: 1
+      - enabled: false
+        url: https://adaway.org/hosts.txt
+        name: AdAway
+        id: 2
+      - enabled: false
+        url: https://hosts-file.net/ad_servers.txt
+        name: hpHosts - Ad and Tracking servers only
+        id: 3
+      - enabled: false
+        url: http://www.malwaredomainlist.com/hostslist/hosts.txt
+        name: MalwareDomainList.com Hosts List
+        id: 4
+      schema_version: 1
+    EOS
   end
 
-  plist_options :manual => "AdGuardHome"
+  plist_options manual: "AdGuardHome"
 
-  def plist; <<~EOS
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-      <dict>
-        <key>Label</key>
-        <string>#{plist_name}</string>
-        <key>ProgramArguments</key>
-        <array>
-          <string>#{opt_prefix}/AdGuardHome</string>
-          <string>--host</string>
-          <string>127.0.0.1</string>
-          <string>--port</string>
-          <string>3000</string>
-        </array>
-        <key>RunAtLoad</key>
-        <true/>
-        <key>KeepAlive</key>
-        <true/>
-        <key>StandardErrorPath</key>
-        <string>#{var}/log/AdGuardHome.log</string>
-        <key>StandardOutPath</key>
-        <string>#{var}/log/AdGuardHome.log</string>
-      </dict>
-    </plist>
-  EOS
+  def plist
+    <<~EOS
+      <?xml version="1.0" encoding="UTF-8"?>
+      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+      <plist version="1.0">
+        <dict>
+          <key>Label</key>
+          <string>#{plist_name}</string>
+          <key>ProgramArguments</key>
+          <array>
+            <string>#{opt_prefix}/AdGuardHome</string>
+            <string>--host</string>
+            <string>127.0.0.1</string>
+            <string>--port</string>
+            <string>3000</string>
+          </array>
+          <key>RunAtLoad</key>
+          <true/>
+          <key>KeepAlive</key>
+          <true/>
+          <key>StandardErrorPath</key>
+          <string>#{var}/log/AdGuardHome.log</string>
+          <key>StandardOutPath</key>
+          <string>#{var}/log/AdGuardHome.log</string>
+        </dict>
+      </plist>
+    EOS
   end
 end

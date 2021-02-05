@@ -8,9 +8,9 @@ class Ots < Formula
 
   bottle :unneeded
 
-  depends_on "python"
-  depends_on "ninja"
   depends_on "meson-internal" => :build
+  depends_on "ninja"
+  depends_on "python"
 
   def install
     system "meson", "--strip", "-Ddebug=true", "--prefix=#{prefix}", "--bindir=#{prefix}/bin", "build"
