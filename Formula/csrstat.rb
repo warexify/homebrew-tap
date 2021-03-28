@@ -1,8 +1,8 @@
 class Csrstat < Formula
   desc "Command-line tool to get the active System Integrity Protection status"
   homepage "https://github.com/Piker-Alpha/csrstat"
-  url "https://github.com/warexify/csrstat/archive/v1.8.tar.gz"
-  sha256 "0ae4d31b5d1eef60ac7644651017df7296a2ed7575cec19a7b587d25a7c0d3f1"
+  url "https://github.com/warexify/csrstat/archive/v2.0.tar.gz"
+  sha256 "ade315aedb55070379d6104f20bfdca4840d7672486e59c665f4f4f12821ad39"
   head "https://github.com/warexify/csrstat.git"
 
   bottle :unneeded
