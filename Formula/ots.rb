@@ -13,7 +13,7 @@ class Ots < Formula
   depends_on "python"
 
   def install
-    system "meson", "--strip", "-Ddebug=true", "--prefix=#{prefix}", "--bindir=#{prefix}/bin", "build"
+    system "meson", "--strip", "-Ddebug=true", "--prefix=#{prefix}", "--bindir=#{bin}", "build"
     system "ninja", "-C", "build", "install"
   end
 

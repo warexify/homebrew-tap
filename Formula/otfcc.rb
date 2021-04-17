@@ -8,15 +8,10 @@ class Otfcc < Formula
 
   def install
     system "./dep/bin-osx/premake5", "xcode4"
-    system "xcodebuild",
-              "-workspace", "build/xcode/otfcc.xcworkspace",
-              "-scheme", "otfccbuild",
-              "-configuration", "Release"
-    system "xcodebuild",
-              "-workspace", "build/xcode/otfcc.xcworkspace",
-              "-scheme", "otfccdump",
-              "-configuration", "Release"
-
+    xcodebuild "-workspace", "build/xcode/otfcc.xcworkspace", "-scheme", "otfccbuild", "-configuration", "Release",
+"SYMROOT=build"
+    xcodebuild "-workspace", "build/xcode/otfcc.xcworkspace", "-scheme", "otfccdump", "-configuration", "Release",
+"SYMROOT=build"
     bin.install "bin/release-x64/otfccbuild"
     bin.install "bin/release-x64/otfccdump"
   end

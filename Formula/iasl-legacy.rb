@@ -6,9 +6,9 @@ class IaslLegacy < Formula
 
   bottle :unneeded
 
-  depends_on "gcc@6" => :build
-  depends_on "flex" => :build
   depends_on "bison" => :build
+  depends_on "flex" => :build
+  depends_on "gcc@6" => :build
 
   def install
     ENV.deparallelize

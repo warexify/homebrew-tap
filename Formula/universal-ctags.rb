@@ -51,6 +51,6 @@ class UniversalCtags < Formula
       }
     EOS
     system "#{bin}/ctags", "-R", "."
-    assert_match /func.*test\.c/, File.read("tags")
+    assert_match(/func.*test\.c/, File.read("tags"))
   end
 end

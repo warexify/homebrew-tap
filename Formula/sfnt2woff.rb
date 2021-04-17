@@ -1,9 +1,9 @@
 class Sfnt2woff < Formula
   desc "Convert existing TrueType/OpenType fonts to WOFF format"
   homepage "https://github.com/bramstein/sfnt2woff"
-  url "https://github.com/bramstein/sfnt2woff/archive/master.tar.gz"
+  url "https://github.com/warexify/sfnt2woff/archive/v1.0.0.tar.gz"
   version "2009-10-04"
-  sha256 "0a7b77c79c2c0065e822a973b05c800aa2d07adf2fa320a7fcb237652d3bca63"
+  sha256 "825e18d2c3f04f364cc9b37b27b492321942edd74f396d323607b06abe75067a"
 
   bottle :unneeded
 

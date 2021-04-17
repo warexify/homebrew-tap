@@ -3,8 +3,8 @@ class Afdko < Formula
 
   desc "Adobe Font Development Kit for OpenType"
   homepage "https://github.com/adobe-type-tools/afdko"
-  url "https://github.com/adobe-type-tools/afdko/releases/download/3.6.2a1/afdko-3.6.2a1.tar.gz"
-  sha256 "02d8064bac6249acea48c02033816ef14b3608ff6d1a28cdac85096485e36043"
+  url "https://files.pythonhosted.org/packages/7c/f6/e0b36bb0970e82018a5b508656ee16b6300dc1cc91f1f9b9149d5d47e7fa/afdko-3.6.2.tar.gz"
+  sha256 "b1a2634848048fb235c25243c4e7148d1eb7919d91af6234cd5b805ac96c8ddd"
   head "https://github.com/adobe-type-tools/afdko.git"
 
   bottle :unneeded
@@ -32,8 +32,8 @@ class Afdko < Formula
   end
 
   resource "FontTools" do
-    url "https://files.pythonhosted.org/packages/97/10/fff006d7a88faa7b959fdf97cebe348afb6d61f626790298821d136d1f79/fonttools-4.19.1.zip"
-    sha256 "4a2b8450bd3b1c23e6259d37c0f1e403519c91b8373b83bb9e3c6e70748cf07b"
+    url "https://files.pythonhosted.org/packages/05/57/4517c2a472db23df6a46a87b9f0d22483bbbbe74589156e70622a01b1671/fonttools-4.21.1.zip"
+    sha256 "d9cf618ab76afb42a79dcc0b4b5e5ee7ec1534f7ad9da3809bb15ddfcedc073d"
   end
 
   resource "MutatorMath" do
@@ -42,13 +42,13 @@ class Afdko < Formula
   end
 
   resource "psautohint" do
-    url "https://files.pythonhosted.org/packages/c4/02/619a83fba0db10443c9cd68ed6ce6de38fef12d55d7f8e2a0c148ea775c8/psautohint-2.2.0.zip"
-    sha256 "4e3c6e62c8c890492987b69904d06cc313b79aa99104d35b60cbed60fbbc8485"
+    url "https://files.pythonhosted.org/packages/41/43/598368bc85ddd39253728291a1353b940337532eb7eee8a0fbcef9b4267d/psautohint-2.3.0.zip"
+    sha256 "78a45b13a475fd83e99fd637bd908d91679c5fd765993cdb6cff1f48d93c3029"
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/69/50/9f29874d835945b845812799edc732ba30c41e9d20431f9f69c8ffb9c670/tqdm-4.56.0.tar.gz"
-    sha256 "fe3d08dd00a526850568d542ff9de9bbc2a09a791da3c334f3213d8d0bbbca65"
+    url "https://files.pythonhosted.org/packages/b1/43/5fbcc228769304f437f412b98be988121afff58245105ad4fdad7f8c1526/tqdm-4.58.0.tar.gz"
+    sha256 "c23ac707e8e8aabb825e4d91f8e17247f9cc14b0d64dd9e97be0781e9e525bba"
   end
 
   resource "ufonormalizer" do
