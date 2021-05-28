@@ -1,10 +1,12 @@
 cask "xerox-wc3045ni" do
-  version "1.010"
-  sha256 "e31a87296563982977084e8c07b184fbbfe8b999f4c6f7fc50c52a371a220959"
+  version "1.012"
+  sha256 "74f8b78e6b3c936485533468888faf0b218133bd128b273a528cc757b6e3eb11"
 
-  url "http://download.support.xerox.com/pub/drivers/WC3045/drivers/macos1012/ar/xrwc3045ni1010m107ml.dmg"
+  url "https://download.support.xerox.com/pub/drivers/WC3045/drivers/macos1012/ar/xrwc3045ni1012m107ml.dmg"
   name "Xerox WC3045NI"
-  homepage "http://www.support.xerox.com/support/workcentre-3045/downloads/enus.html?operatingSystem=macOS10_13"
+  homepage "https://www.support.xerox.com/support/workcentre-3045/downloads/enus.html?operatingSystem=macOS10_15"
+
+  depends_on macos: ">= :sierra"
 
   pkg "Xerox WorkCentre 3045NI installer.pkg"
 

@@ -5,7 +5,7 @@ cask "qtopencoreconfig" do
   name "QtOpenCoreConfig"
   homepage "https://github.com/ic005k/QtOpenCoreConfig"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :high_sierra"
 
   app "OCAuxiliaryTools.app"
 

@@ -1,11 +1,11 @@
 cask "qtiasl" do
-  version "1.0.61"
-  sha256 "2fdc21511cd6e9ca87093554f537e71ec8d87021349c6f948a9db98b248292d4"
+  version "1.0.62"
+  sha256 "c4d6ebe06aa78856a33ab2be63c9c2b1f95efeed08c4151b03c08c443d7b122d"
   url "https://github.com/ic005k/QtiASL/releases/download/#{version}/QtiASL_Mac.dmg"
   name "QtiASL"
   homepage "https://github.com/ic005k/QtiASL"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :high_sierra"
 
   app "QtiASL.app"
 
