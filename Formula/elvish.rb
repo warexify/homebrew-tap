@@ -14,7 +14,7 @@ class Elvish < Formula
     ENV["GOOS"] = "darwin"
     ENV["GOARCH"] = `go env GOARCH`.chomp
     ENV["GOPATH"] = `go env GOPATH`.chomp
-    ENV["GOBIN"] = "#{prefix}/bin"
+    ENV["GOBIN"] = bin.to_s
     ENV["CGO_ENABLED"] = "0"
     system "make", "get"
   end

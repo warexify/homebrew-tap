@@ -20,7 +20,8 @@ class Mtoc < Formula
   end
 
   def install
-    inreplace "xcode/libstuff.xcconfig", "HEADER_SEARCH_PATHS = ${inherited} ${DT_TOOLCHAIN_DIR}/usr/local/include", "HEADER_SEARCH_PATHS = ${inherited} ${DT_TOOLCHAIN_DIR}/usr/local/include /usr/local/opt/llvm/include"
+    inreplace "xcode/libstuff.xcconfig", "HEADER_SEARCH_PATHS = ${inherited} ${DT_TOOLCHAIN_DIR}/usr/local/include",
+"HEADER_SEARCH_PATHS = ${inherited} ${DT_TOOLCHAIN_DIR}/usr/local/include /usr/local/opt/llvm/include"
     xcodebuild "-configuration", "Release", "-target", "efi install", "SYMROOT=build"
     system "strip", "-x", "build/Release/mtoc"
     system "strip", "-x", "build/Release/mtor"

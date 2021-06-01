@@ -1,4 +1,4 @@
-cask "ghidra-beta" do
+cask "ghidra-dev" do
   version "10.0-BETA_PUBLIC,20210521"
   sha256 "f549dfccd0f106f9befb0b5afb7f2f86050356631b29bc9dd15d7f0333acbc7e"
 
@@ -6,7 +6,7 @@ cask "ghidra-beta" do
   name "Ghidra"
   homepage "https://www.ghidra-sre.org/"
 
-  conflicts_with cask: "ghidra"
+  conflicts_with cask: "ghidra-beta"
 
   binary "ghidra_#{version.before_comma}/ghidraRun"
 
