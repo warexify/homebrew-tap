@@ -1,8 +1,8 @@
 class CloudTorrent < Formula
   desc "Self-hosted remote torrent client"
   homepage "https://github.com/boypt/simple-torrent"
-  url "https://github.com/boypt/simple-torrent/archive/1.3.4.tar.gz"
-  sha256 "641b4e6f34b6cc0331e7ec804bfed32f91f36e714edceae860f85398868a7d69"
+  url "https://github.com/boypt/simple-torrent/archive/1.3.6.tar.gz"
+  sha256 "7785b7d9d217fa044e64fe1e4e03d3849e4123611c67c5c5179fbb1aeb7654c0"
   license "AGPL-3.0 License"
   head "https://github.com/boypt/simple-torrent.git", branch: "master"
 

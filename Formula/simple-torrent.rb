@@ -10,23 +10,23 @@ class SimpleTorrent < Formula
   end
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.4/cloud-torrent_darwin_amd64_static.gz"
-    sha256 "d732ca819e520953d175d5030d81e824bcc9dbf234050c0571dc1c4d656d8a8c"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_darwin_amd64_static.gz"
+    sha256 "05c7cb88cc715fbbbbeb5d09dab42c960fb5d37dddf28d10ef3dfab3c47f073f"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.4/cloud-torrent_linux_amd64_static.gz"
-    sha256 "2ca5e4ddc42275f2448a391b3aa4a55ddc33bb561d418498a48510b609865f9f"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_amd64_static.gz"
+    sha256 "57fff18227be6528873d9827fc6fe50ead1329701dbf4966428518d0a0f2b101"
   end
 
   if OS.linux? && Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.4/cloud-torrent_linux_386_static.gz"
-    sha256 "ab92c751f918d944072093f5abe7ebbd1f8d1dd138e12019b1bffe9d8b645c65"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_386_static.gz"
+    sha256 "4ea80bccb38fae6b97c88b2e4c3bcb5173e38f546034b30fcec00c704a3a4b56"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.4/cloud-torrent_linux_arm64_static.gz"
-    sha256 "81995fcf6a409a47b7316967e65f2faeba0d16b80f3913cc91d402d7f37642a3"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_arm64_static.gz"
+    sha256 "05ce23e5a653eef8c9e4e3a187a21c5e21fb45606a924fdef744a60102baabe7"
   end
 
   bottle :unneeded
