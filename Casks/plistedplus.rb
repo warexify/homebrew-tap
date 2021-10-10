@@ -1,6 +1,6 @@
 cask "plistedplus" do
-  version "1.0.65"
-  sha256 "8752c338159b7e48e4d2fafe37e9f58ce299a5eef764d38267af26384ad3c083"
+  version "1.0.70"
+  sha256 "5a8490474ab931b1ec21d58905fde3ac1ddf394614c8965202285351c20c628e"
 
   url "https://github.com/ic005k/PlistEDPlus/releases/download/#{version}/PlistEDPlus_Mac.dmg"
   name "PlistEDPlus"

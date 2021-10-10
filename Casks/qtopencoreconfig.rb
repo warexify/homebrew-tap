@@ -1,6 +1,6 @@
 cask "qtopencoreconfig" do
-  version "20211008"
-  sha256 "2d035812e2aad3fb22a0134b2e233bbe756785b583b47a3435f4ae6b28b51d19"
+  version "20211011"
+  sha256 "0d350b2c91b31374150633600739339ffb3b7cdeb990fd6f5047ef718af3b2e3"
 
   url "https://github.com/ic005k/QtOpenCoreConfig/releases/download/#{version}/OCAT_Mac.dmg"
   name "QtOpenCoreConfig"
