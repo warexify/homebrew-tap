@@ -21,7 +21,7 @@ class AfdkoLegacy < Formula
         compareFamily copyCFFCharstrings detype1 digiplot fontplot fontplot2 fontsetplot hintplot kernCheck
         makeInstances makeInstancesUFO makeotf makeotfexe mergeFonts otc2otf otf2otc rotateFont setFDKPaths
         sfntdiff sfntedit spot stemHist ttx ttxn tx type1 ufonormalizer waterfallplot
-      ].map { |s| prefix/"Tools/osx/" + s }
+      ].map { |s| (prefix/"Tools/osx/") + s }
     end
   end
 
