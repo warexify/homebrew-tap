@@ -5,8 +5,6 @@ class AfdkoLegacy < Formula
   version "2.5.65322"
   sha256 "1639972e94e44631f14a57760a15422d02d79d5b7c97c1f17eaeb0f5439b0363"
 
-  bottle :unneeded
-
   def install
     if build.stable?
       prefix.install Dir["FDK-25-MAC.b65322/*"]

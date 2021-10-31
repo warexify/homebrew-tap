@@ -5,8 +5,6 @@ class Jump < Formula
   sha256 "76d6453246c047b49e669499dc1b6a7e4c4520653627461d84ad40c6afb45562"
   head "https://github.com/gsamokovarov/jump.git"
 
-  bottle :unneeded
-
   depends_on "go" => :build
 
   def install

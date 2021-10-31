@@ -5,8 +5,6 @@ class ClassDump < Formula
   sha256 "c328bd80e8ed051a518e8c2bac6cc95a3a7368d89f988e4fc243d6c7f3ae8702"
   head "https://github.com/warexify/class-dump.git"
 
-  bottle :unneeded
-
   depends_on xcode: :build
 
   def install

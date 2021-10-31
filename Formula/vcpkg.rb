@@ -7,8 +7,6 @@ class Vcpkg < Formula
   license "MIT"
   head "https://github.com/warexify/vcpkg.git"
 
-  bottle :unneeded
-
   depends_on "cmake" => :build
   depends_on "ninja" => :build
 

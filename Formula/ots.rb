@@ -6,8 +6,6 @@ class Ots < Formula
 
   head "https://github.com/khaledhosny/ots.git"
 
-  bottle :unneeded
-
   depends_on "meson-internal" => :build
   depends_on "ninja"
   depends_on "python"

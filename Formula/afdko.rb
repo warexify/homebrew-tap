@@ -7,8 +7,6 @@ class Afdko < Formula
   sha256 "ed827c9df740e6bdeb7b3f975d5fc16b65b7d36a65b65f5e54d2dd3b78151216"
   head "https://github.com/adobe-type-tools/afdko.git"
 
-  bottle :unneeded
-
   depends_on "python@3.9"
 
   resource "lxml" do

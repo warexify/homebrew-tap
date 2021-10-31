@@ -5,8 +5,6 @@ class Keyboardswitcher < Formula
   sha256 "3c925eda22be982ebe2d619cccb1c6ce3bdef715725b7cdee312c769d1cb6f9c"
   head "https://github.com/Lutzifer/keyboardSwitcher.git"
 
-  bottle :unneeded
-
   depends_on xcode: :build
 
   def install

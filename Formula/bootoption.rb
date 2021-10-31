@@ -5,8 +5,6 @@ class Bootoption < Formula
   sha256 "c635749ca34756c142034bfd4ffd50f541a0f2198f3058c24fcef7372affbd92"
   head "https://github.com/bootoption/bootoption.git"
 
-  bottle :unneeded
-
   depends_on xcode: ["9.0", :build]
 
   def install

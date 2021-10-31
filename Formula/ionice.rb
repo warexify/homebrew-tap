@@ -5,8 +5,6 @@ class Ionice < Formula
   sha256 "4fe17adb0346e088ead6630c7eb2d7cb815833b207306323af9f52aae1151a12"
   head "https://github.com/someposer/ionice.git"
 
-  bottle :unneeded
-
   def install
     system "make", "ionice"
     system "make", "ionice_fork"

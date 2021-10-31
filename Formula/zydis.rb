@@ -6,8 +6,6 @@ class Zydis < Formula
 
   head "https://github.com/zyantific/zydis.git"
 
-  bottle :unneeded
-
   depends_on "cmake" => :build
 
   def install

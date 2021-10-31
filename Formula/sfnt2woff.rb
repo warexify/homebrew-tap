@@ -5,8 +5,6 @@ class Sfnt2woff < Formula
   version "2009-10-04"
   sha256 "825e18d2c3f04f364cc9b37b27b492321942edd74f396d323607b06abe75067a"
 
-  bottle :unneeded
-
   def install
     system "make"
     bin.install "sfnt2woff"

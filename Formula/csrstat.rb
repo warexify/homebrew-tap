@@ -5,8 +5,6 @@ class Csrstat < Formula
   sha256 "ade315aedb55070379d6104f20bfdca4840d7672486e59c665f4f4f12821ad39"
   head "https://github.com/warexify/csrstat.git"
 
-  bottle :unneeded
-
   def install
     system "make", "csrstat"
     bin.install "csrstat"

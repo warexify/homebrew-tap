@@ -5,7 +5,6 @@ class Aptly < Formula
   sha256 "4172d54613139f6c34d5a17396adc9675d7ed002e517db8381731d105351fbe5"
   head "https://github.com/aptly-dev/aptly.git"
 
-  bottle :unneeded
   option "without-completions", "Disable bash/zsh completions"
   depends_on "go" => :build
 

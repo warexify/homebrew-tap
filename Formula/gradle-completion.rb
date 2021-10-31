@@ -5,8 +5,6 @@ class GradleCompletion < Formula
   sha256 "5d77f0c739fe983cfa86078a615f43be9be0e3ce05a3a7b70cb813a1ebd1ceef"
   head "https://github.com/gradle/gradle-completion.git"
 
-  bottle :unneeded
-
   def install
     bash_completion.install "gradle-completion.bash" => "gradle"
     zsh_completion.install "_gradle" => "_gradle"

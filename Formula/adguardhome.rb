@@ -7,8 +7,6 @@ class Adguardhome < Formula
   sha256 "88929a296a5c4dabc7df3b51483f59610fcd76591ea8a02d39fb8eda311a05da"
   head "https://github.com/AdguardTeam/AdGuardHome.git"
 
-  bottle :unneeded
-
   depends_on "go" => :build
   depends_on "node" => :build
   depends_on "packr" => :build

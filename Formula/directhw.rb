@@ -5,8 +5,6 @@ class Directhw < Formula
   sha256 "5840f082d098b9cf8d870bed12ad7687ed7b59253e762aa878cc541f7d985397"
   head "https://github.com/warexify/directhw.git"
 
-  bottle :unneeded
-
   depends_on xcode: :build
 
   def install

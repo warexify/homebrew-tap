@@ -6,8 +6,6 @@ class Elvish < Formula
   license "BSD-2-Clause"
   head "https://github.com/elves/elvish.git"
 
-  bottle :unneeded
-
   depends_on "go" => :build
 
   def install

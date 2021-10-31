@@ -6,8 +6,6 @@ class Rizin < Formula
   license "LGPL-3.0-only"
   head "https://github.com/rizinorg/rizin.git"
 
-  bottle :unneeded
-
   depends_on "meson" => :build
   depends_on "ninja" => :build
 

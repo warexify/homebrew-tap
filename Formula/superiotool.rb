@@ -4,8 +4,6 @@ class Superiotool < Formula
   url "https://github.com/warexify/superiotool/archive/superiotool-4.5.tar.gz"
   sha256 "feda3f93ccdc08da7b08c575831568dfa42b0e3ba5cdaf7ae2aed99bda5a335d"
 
-  bottle :unneeded
-
   depends_on "directhw"
   depends_on "pciutils"
 

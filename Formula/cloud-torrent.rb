@@ -11,8 +11,6 @@ class CloudTorrent < Formula
     strategy :github_latest
   end
 
-  bottle :unneeded
-
   depends_on "go" => :build
 
   def datadir

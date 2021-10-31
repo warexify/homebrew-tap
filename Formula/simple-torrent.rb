@@ -29,8 +29,6 @@ class SimpleTorrent < Formula
     sha256 "05ce23e5a653eef8c9e4e3a187a21c5e21fb45606a924fdef744a60102baabe7"
   end
 
-  bottle :unneeded
-
   depends_on "go" => :build
 
   def datadir
