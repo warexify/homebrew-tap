@@ -1,8 +1,11 @@
-# Homebrew edk2-buildtools
-Homebrew formulae for installing edk2-buildtools.
+# My Homebrew Tap
 
-## Installation
-```bash
-brew tap warexify/homebrew-edk2-buildtools
-brew install <formula>
-```
+## How do I install these formulae?
+
+`brew install warexify/tap/<formula>`
+
+Or `brew tap warexify/tap` and then `brew install <formula>`.
+
+## Documentation
+
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
