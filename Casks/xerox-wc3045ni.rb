@@ -1,6 +1,6 @@
 cask "xerox-wc3045ni" do
   version "1.012"
-  sha256 "74f8b78e6b3c936485533468888faf0b218133bd128b273a528cc757b6e3eb11"
+  sha256 :no_check
 
   url "https://download.support.xerox.com/pub/drivers/WC3045/drivers/macos1012/ar/xrwc3045ni1012m107ml.dmg"
   name "Xerox WC3045NI"

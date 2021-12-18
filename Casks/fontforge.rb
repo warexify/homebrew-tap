@@ -3,7 +3,8 @@ cask "fontforge" do
   sha256 "64e7193485b2047ff497ec43a39793e18593b2702a0724810f8c2c8ca8a34999"
 
   # dl.bintray.com was verified as official when first introduced to the cask
-  url "https://github.com/fontforge/fontforge/releases/download/20201107/FontForge-#{version}.app.dmg"
+  url "https://github.com/fontforge/fontforge/releases/download/20201107/FontForge-#{version}.app.dmg",
+      verified: "github.com/fontforge/fontforge/"
   name "FontForge"
   homepage "https://fontforge.github.io/en-US/"
 

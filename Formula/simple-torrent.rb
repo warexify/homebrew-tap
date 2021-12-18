@@ -1,7 +1,7 @@
 class SimpleTorrent < Formula
   desc "Self-hosted remote torrent client"
   homepage "https://github.com/boypt/simple-torrent"
-  license "AGPL-3.0 License"
+  license "AGPL-3.0-only"
   head "https://github.com/boypt/simple-torrent.git"
 
   livecheck do
@@ -10,23 +10,23 @@ class SimpleTorrent < Formula
   end
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_darwin_amd64_static.gz"
-    sha256 "05c7cb88cc715fbbbbeb5d09dab42c960fb5d37dddf28d10ef3dfab3c47f073f"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.9/cloud-torrent_darwin_amd64_static.gz"
+    sha256 "109e0e101fd3dfd967addc1177f51b6ad559bdfbea42c5400e05f09d0116d7a6"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_amd64_static.gz"
-    sha256 "57fff18227be6528873d9827fc6fe50ead1329701dbf4966428518d0a0f2b101"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.9/cloud-torrent_linux_amd64_static.gz"
+    sha256 "d2f535e4cd0449b357a563cfce79c1f6afcac9b7b3af94e758defc44faa52ebf"
   end
 
   if OS.linux? && Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_386_static.gz"
-    sha256 "4ea80bccb38fae6b97c88b2e4c3bcb5173e38f546034b30fcec00c704a3a4b56"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.9/cloud-torrent_linux_386_static.gz"
+    sha256 "583898eb907c21dbbcb6f33934eae3dc1d6ec2620fdc7689c70a3479049af52b"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/boypt/simple-torrent/releases/download/1.3.6/cloud-torrent_linux_arm64_static.gz"
-    sha256 "05ce23e5a653eef8c9e4e3a187a21c5e21fb45606a924fdef744a60102baabe7"
+    url "https://github.com/boypt/simple-torrent/releases/download/1.3.9/cloud-torrent_linux_arm64_static.gz"
+    sha256 "6f48f8b59bc8d834c6ede1d27ecc1a598b8a0be1dab00622caa6fd047e51eed6"
   end
 
   depends_on "go" => :build
@@ -62,19 +62,20 @@ class SimpleTorrent < Formula
       WatchDirectory: #{datadir}/torrents
       EnableUpload: true
       EnableSeeding: true
-      IncomingPort: 64248
+      IncomingPort: 50007
       # DoneCmd: ""
-      SeedRatio: 1.0
-      SeedTime: "0s"
+      SeedRatio: 1.5
+      SeedTime: "60m"
       UploadRate: Low
       DownloadRate: Unlimited
       TrackerList: |-
         remote:https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ip.txt
         remote:https://newtrackon.com/api/live
+        http://p4p.arenabg.com:1337/announce
       AlwaysAddTrackers: true
       MaxConcurrentTask: 0
       ProxyURL: ""
-      # ScraperURL: ""
+      # ScraperURL: "https:#raw.githubusercontent.com/boypt/simple-torrent/master/scraper-config.json"
       # RSSUrl: ""
     EOS
     etc.install "cloud-torrent.yaml"

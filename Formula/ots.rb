@@ -1,12 +1,12 @@
 class Ots < Formula
   desc "OpenType Sanitiser parses validates & sanitizes OpenType & WOFF2 font files"
   homepage "https://github.com/khaledhosny/ots"
-  url "https://github.com/khaledhosny/ots/releases/download/v8.0.0/ots-8.0.0.tar.xz"
-  sha256 "00aed968f88d492bc42e9ddb941bda9502267d54c51021ad071b51effaa0401a"
+  url "https://github.com/khaledhosny/ots/releases/download/v8.1.4/ots-8.1.4.tar.xz"
+  sha256 "f21b927b03248e392e416c765eea4940c21a4e82f09045bc893b141eb57f1e29"
 
   head "https://github.com/khaledhosny/ots.git"
 
-  depends_on "meson-internal" => :build
+  depends_on "meson" => :build
   depends_on "ninja"
   depends_on "python"
 

@@ -1,9 +1,9 @@
 class CloudTorrent < Formula
   desc "Self-hosted remote torrent client"
   homepage "https://github.com/boypt/simple-torrent"
-  url "https://github.com/boypt/simple-torrent/archive/1.3.6.tar.gz"
-  sha256 "7785b7d9d217fa044e64fe1e4e03d3849e4123611c67c5c5179fbb1aeb7654c0"
-  license "AGPL-3.0 License"
+  url "https://github.com/boypt/simple-torrent/archive/1.3.9.tar.gz"
+  sha256 "3bdc4df30d04e4e94c04961bd001b7e7e4182bf171475d68de1560c3af1dc7bf"
+  license "AGPL-3.0-only"
   head "https://github.com/boypt/simple-torrent.git", branch: "master"
 
   livecheck do
@@ -45,19 +45,20 @@ class CloudTorrent < Formula
       WatchDirectory: #{datadir}/torrents
       EnableUpload: true
       EnableSeeding: true
-      IncomingPort: 64248
+      IncomingPort: 50007
       # DoneCmd: ""
-      SeedRatio: 1.0
-      SeedTime: "0s"
+      SeedRatio: 1.5
+      SeedTime: "60m"
       UploadRate: Low
       DownloadRate: Unlimited
       TrackerList: |-
         remote:https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ip.txt
         remote:https://newtrackon.com/api/live
+        http://p4p.arenabg.com:1337/announce
       AlwaysAddTrackers: true
       MaxConcurrentTask: 0
       ProxyURL: ""
-      # ScraperURL: ""
+      # ScraperURL: "https:#raw.githubusercontent.com/boypt/simple-torrent/master/scraper-config.json"
       # RSSUrl: ""
     EOS
     etc.install "cloud-torrent.yaml"
