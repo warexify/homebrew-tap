@@ -1,6 +1,6 @@
 cask "qtiasl" do
-  version "1.0.79"
-  sha256 "17a90285bf3786294914943370648edc3efd8ab6b1c51b91ff34d7e9aeac9870"
+  version "1.0.88"
+  sha256 "ad53ebd2e035a3d71f4a93059f606b58cd936207a31a830e0644f1df234d5ab2"
 
   url "https://github.com/ic005k/QtiASL/releases/download/#{version}/QtiASL_Mac.dmg"
   name "QtiASL"
