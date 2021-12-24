@@ -1,11 +1,11 @@
 class Vcpkg < Formula
   desc "C++ Library Manager"
   homepage "https://github.com/microsoft/vcpkg"
-  url "https://github.com/warexify/vcpkg/archive/2021.05.12.tar.gz"
-  version "2021.05.12"
-  sha256 "907f26a5357c30e255fda9427f1388a39804f607a11fa4c083cc740cb268f5dc"
+  url "https://github.com/warexify/vcpkg/archive/2021.12.25.tar.gz"
+  version "2021.12.25"
+  sha256 "4a0cf93f96f4268c5a82c9868787507df4a51f9c5df893b9ca2a9efa590efce1"
   license "MIT"
-  head "https://github.com/warexify/vcpkg.git"
+  head "https://github.com/warexify/vcpkg.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
