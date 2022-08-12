@@ -2,7 +2,7 @@ class Directhw < Formula
   desc "Linux compatibility library to run utilities on Windows and OS X"
   homepage "https://www.coreboot.org/DirectHW"
   url "https://github.com/warexify/directhw/archive/v1.4.tar.gz"
-  sha256 "5840f082d098b9cf8d870bed12ad7687ed7b59253e762aa878cc541f7d985397"
+  sha256 "7b439bea9f0abbd425715588007c90851c229d9c72fc5a6aa8eee70042be721c"
   head "https://github.com/warexify/directhw.git"
 
   depends_on xcode: :build
