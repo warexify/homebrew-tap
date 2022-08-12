@@ -8,12 +8,19 @@ class Directhw < Formula
   depends_on xcode: :build
 
   def install
-    system "make", "main"
-    system "make", "libs"
-    share.install "build/Release/DirectHW.kext"
-    frameworks.install "build/Release/DirectHW.framework"
-    lib.install "build/Release/libDirectHW.a"
-    lib.install "build/Release/libDirectHW.dylib"
+    cd "DirectHW" do
+      xcodebuild "-configuration", "Release", "SYMROOT=build", "PREFIX=#{prefix}"
+      # system "make", "main"
+      xcodebuild "-scheme", "KEXT", "-configuration", "Release", "SYMROOT=build", "PREFIX=#{prefix}"
+      # system "make", "libs"
+      xcodebuild "-scheme", "DirectHW", "-configuration", "Release", "SYMROOT=build", "PREFIX=#{prefix}"
+      xcodebuild "-scheme", "libDirectHW", "-configuration", "Release", "SYMROOT=build", "PREFIX=#{prefix}"
+      share.install "build/Release/DirectHW.kext"
+      frameworks.install "build/Release/DirectHW.framework"
+      lib.install "build/Release/libDirectHW.a"
+      include.install "build/Release/usr/local/include/DirectHW.h"
+      # lib.install "build/Release/libDirectHW.dylib"
+    end
   end
 
   test do

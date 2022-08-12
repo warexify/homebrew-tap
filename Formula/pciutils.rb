@@ -1,8 +1,8 @@
 class Pciutils < Formula
   desc "Library for portable access to PCI bus configuration registers"
-  homepage "https://github.com/warexify/pciutils"
-  url "https://github.com/warexify/pciutils/archive/pciutils-3.6.5.tar.gz"
-  sha256 "6a05512aad50e2b5aa47ae0346b91c4c406b808e56246d1b3caae5f2182bf121"
+  homepage "https://github.com/warexify/pciutils-osx"
+  url "https://github.com/warexify/pciutils-osx/archive/v3.7.0.tar.gz"
+  sha256 "410be929441a4994b61f4e52af1970683e923daf8bc64b26910738ca28b1f670"
 
   depends_on "directhw"
 
