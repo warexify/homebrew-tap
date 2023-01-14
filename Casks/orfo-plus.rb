@@ -12,10 +12,10 @@ cask "orfo-plus" do
   pkg "ORFO2016Plus.pkg"
 
   uninstall pkgutil:    [
-    "com.informatic.pkg.orfo2016",
-    "com.informatic.pkg.seticon",
-    "com.informatic.pkg.startpp",
-  ],
+              "com.informatic.pkg.orfo2016",
+              "com.informatic.pkg.seticon",
+              "com.informatic.pkg.startpp",
+            ],
             delete:     "/Library/PreferencePanes/ORFOSetup.prefPane",
             login_item: "OrfoUpdate"
 
